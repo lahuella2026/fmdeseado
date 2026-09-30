@@ -115,6 +115,55 @@ h2{font:900 clamp(40px,7vw,64px)/.95 var(--display);text-transform:uppercase;mar
 .chip{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--vivo);border:1px solid rgba(255,90,78,.5);border-radius:999px;padding:3px 10px;white-space:nowrap}
 @media (max-width:560px){.grilla li{grid-template-columns:1fr;gap:4px}.grilla .chip{justify-self:start}}
 
+/* Noticias */
+.sub{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 16px}
+.sub h3{margin:0;font:800 28px/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.sub small{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--suave)}
+.propias{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:48px}
+.nota{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--linea);border-radius:14px;overflow:hidden;min-width:0}
+.nota img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#0f1e2a}
+.nota .cuerpo{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.nota time{font:500 12px var(--mono);letter-spacing:.08em;color:var(--ambar);text-transform:uppercase}
+.nota h4{margin:0;font:800 22px/1.15 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.nota p{margin:0;color:var(--suave);font-size:15px}
+.nota a.mas{margin-top:auto;padding-top:8px;color:var(--ambar);font-weight:700;text-decoration:none;font-size:15px}
+.nota a.mas:hover{text-decoration:underline}
+.nota .ej{align-self:flex-start;font:500 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--suave);border:1px dashed var(--linea);border-radius:999px;padding:2px 8px}
+.fuentes{display:flex;gap:6px;flex-wrap:wrap}
+.fuentes button{border:1px solid var(--linea);background:transparent;color:var(--suave);border-radius:999px;padding:6px 14px;font:500 14px var(--body);cursor:pointer}
+.fuentes button[aria-selected="true"]{background:var(--texto);color:var(--noche);border-color:var(--texto);font-weight:700}
+.titulares{list-style:none;margin:0;padding:0;border-top:1px solid var(--linea)}
+.titulares li{border-bottom:1px solid var(--linea)}
+.titulares a{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:14px 4px;text-decoration:none}
+.titulares a:hover b{color:var(--ambar)}
+.titulares b{font-weight:600;font-size:17px;line-height:1.35;min-width:0}
+.titulares span{font:500 12px var(--mono);color:var(--suave);white-space:nowrap;align-self:start;padding-top:4px}
+.titulares em{grid-column:1/-1;font-style:normal;font-size:13px;color:var(--suave)}
+.titulares .estado{padding:18px 4px;color:var(--suave)}
+@media (max-width:560px){.titulares a{grid-template-columns:1fr}.titulares span{padding-top:0}}
+
+/* Auspiciantes */
+.carrusel{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--linea);background:var(--panel);aspect-ratio:3/1;min-height:220px;max-width:100%}
+.slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .7s ease,visibility .7s;display:flex;align-items:center;text-decoration:none;color:#fff}
+.slide.activa{opacity:1;visibility:visible}
+.slide img{width:100%;height:100%;object-fit:cover}
+.aviso{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:24px clamp(20px,5vw,56px);background:var(--fondo-aviso);position:relative;overflow:hidden}
+.aviso::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.08)}
+.aviso small{font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.aviso b{font:900 clamp(32px,6vw,60px)/.95 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.aviso p{margin:0;font-size:clamp(15px,2vw,19px);max-width:40ch;opacity:.95}
+.aviso .dato{font-weight:700;font-size:15px;margin-top:4px}
+.aviso .ej{position:absolute;top:14px;right:16px;z-index:1;font:500 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;border:1px dashed rgba(255,255,255,.6);border-radius:999px;padding:2px 8px}
+.car-ctrl{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:14px}
+.car-ctrl button.flecha{width:36px;height:36px;border-radius:50%;border:1px solid var(--linea);background:transparent;color:var(--texto);cursor:pointer;font-size:18px;line-height:1}
+.car-ctrl button.flecha:hover{border-color:var(--suave)}
+.puntos{display:flex;gap:8px}
+.puntos button{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:var(--linea);cursor:pointer}
+.puntos button[aria-current="true"]{background:var(--ambar);width:26px;border-radius:5px}
+.sumate{margin:22px 0 0;color:var(--suave);text-align:center}
+.sumate a{color:var(--ambar);font-weight:700;text-decoration:none}
+@media (max-width:560px){.carrusel{aspect-ratio:auto;height:240px}}
+
 /* Contacto */
 .contacto{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .contacto div{border:1px solid var(--linea);border-radius:12px;padding:18px 20px}
@@ -157,6 +206,7 @@ footer .ig:hover{color:var(--ambar)}
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#programacion">Programación</a></li>
+        <li><a href="#noticias">Noticias</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="#vivo" class="vivo-link" data-play><span class="punto"></span>Escuchar en vivo</a></li>
       </ul>
@@ -200,6 +250,36 @@ footer .ig:hover{color:var(--ambar)}
       <p class="intro">Grilla semanal. Horarios de Argentina.</p>
       <div class="dias" role="tablist" id="dias"></div>
       <ul class="grilla" id="grilla"></ul>
+    </div>
+  </section>
+
+  <section class="bloque" id="noticias">
+    <div class="wrap">
+      <h2>Noticias</h2>
+      <p class="intro">Lo que pasa hoy en Puerto Deseado, la provincia y el país.</p>
+
+      <div class="sub"><h3>De la radio</h3><small id="propiasEstado"></small></div>
+      <div class="propias" id="propias"></div>
+
+      <div class="sub">
+        <h3>Titulares del día</h3>
+        <div class="fuentes" role="tablist" id="fuentes"></div>
+      </div>
+      <ul class="titulares" id="titulares"><li class="estado">Cargando titulares…</li></ul>
+    </div>
+  </section>
+
+  <section class="bloque" id="auspiciantes">
+    <div class="wrap">
+      <h2>Nuestros auspiciantes</h2>
+      <p class="intro">Los comercios que hacen posible FM Deseado.</p>
+      <div class="carrusel" id="carrusel" aria-roledescription="carrusel" aria-label="Auspiciantes"></div>
+      <div class="car-ctrl">
+        <button class="flecha" type="button" id="carPrev" aria-label="Anterior">‹</button>
+        <div class="puntos" id="carPuntos"></div>
+        <button class="flecha" type="button" id="carNext" aria-label="Siguiente">›</button>
+      </div>
+      <p class="sumate">¿Querés que tu comercio aparezca acá? <a href="https://wa.me/5492974111615" target="_blank" rel="noopener">Escribinos por WhatsApp</a></p>
     </div>
   </section>
 
@@ -269,6 +349,38 @@ const PROGRAMACION = [
 // Lo que suena cuando no hay programa en vivo:
 const RELLENO = { nombre:"Música continuada", detalle:"La mejor música, las 24 horas." };
 
+
+// ----- NOTICIAS DE LA RADIO -----
+// Link de la planilla de Google publicada como CSV (Archivo → Compartir → Publicar en la web → CSV).
+// Columnas: Fecha | Título | Texto | Foto | Link. Mientras esté vacío se muestran noticias de ejemplo.
+const NOTICIAS_CSV = "";
+const NOTICIAS_EJEMPLO = [
+  { fecha:"", titulo:"Nueva temporada de Los Primeros de la Mañana", texto:"Stella Maris Rojas y Juan Manuel Saborido te acompañan de lunes a viernes de 9 a 13.", foto:"", link:"" },
+  { fecha:"", titulo:"Ya podés escucharnos online", texto:"Desde esta web podés escuchar FM Deseado 103.5 en vivo, estés donde estés.", foto:"", link:"" },
+  { fecha:"", titulo:"Mandanos tu saludo", texto:"Escribinos al WhatsApp 2974 111 615 y te saludamos al aire.", foto:"", link:"" },
+];
+
+// ----- TITULARES AUTOMÁTICOS -----
+// Se toman de Google Noticias. Podés cambiar las búsquedas o agregar pestañas.
+const TITULARES = [
+  { nombre:"Puerto Deseado", rss:"https://news.google.com/rss/search?q=%22Puerto+Deseado%22&hl=es-419&gl=AR&ceid=AR:es-419" },
+  { nombre:"Santa Cruz",     rss:"https://news.google.com/rss/search?q=%22Santa+Cruz%22+provincia+when:2d&hl=es-419&gl=AR&ceid=AR:es-419" },
+  { nombre:"País",           rss:"https://news.google.com/rss?hl=es-419&gl=AR&ceid=AR:es-419" },
+];
+
+
+// ----- AUSPICIANTES -----
+// Cada aviso puede ser una imagen (flyer) con "imagen", o un aviso armado con nombre, rubro, texto, dato y color.
+// "link" es opcional (Instagram, WhatsApp o web del comercio). Borrá "ejemplo:true" en los reales.
+const SEGUNDOS_POR_AVISO = 5;
+const AUSPICIANTES = [
+  { ejemplo:true, nombre:"Panadería La Espiga", rubro:"Panadería y confitería", texto:"Pan casero, facturas y tortas por encargo todos los días.", dato:"Abierto de 7 a 21 hs", color:"linear-gradient(120deg,#8a4b12,#d98a2b)" },
+  { ejemplo:true, nombre:"Ferretería El Ancla", rubro:"Ferretería · Pinturería", texto:"Todo para tu casa, tu obra y tu barco.", dato:"Envíos a domicilio", color:"linear-gradient(120deg,#123a5c,#2f7fb8)" },
+  { ejemplo:true, nombre:"Pinturas Del Sur", rubro:"Pinturería", texto:"Asesoramiento y color a medida. Pagá en cuotas sin interés.", dato:"Consultá por WhatsApp", color:"linear-gradient(120deg,#5b1d6e,#b04ac7)" },
+  { ejemplo:true, nombre:"Taller Mecánico Ruta 281", rubro:"Mecánica integral", texto:"Service, frenos y tren delantero. Turnos en el día.", dato:"Lunes a sábado", color:"linear-gradient(120deg,#1f2a33,#4b5d6b)" },
+  { ejemplo:true, nombre:"Almacén Don Pedro", rubro:"Almacén · Fiambrería", texto:"Precios de barrio y la atención de siempre.", dato:"Todos los días hasta las 23", color:"linear-gradient(120deg,#1d5c3a,#3fae6b)" },
+];
+
 /* ============ fin de la configuración ============ */
 
 const DIAS = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
@@ -333,6 +445,114 @@ function pintarAhora(){
 pintarDias(); pintarGrilla(); pintarAhora();
 setInterval(()=>{pintarAhora(); pintarGrilla();},60000);
 document.getElementById("anio").textContent=new Date().getFullYear();
+
+// ===== Noticias =====
+const esc = t => String(t??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function parseCSV(txt){
+  const filas=[]; let fila=[], campo="", q=false;
+  for(let i=0;i<txt.length;i++){
+    const c=txt[i];
+    if(q){ if(c==='"'){ if(txt[i+1]==='"'){campo+='"';i++;} else q=false; } else campo+=c; }
+    else if(c==='"') q=true;
+    else if(c===','){ fila.push(campo); campo=""; }
+    else if(c==='\n'||c==='\r'){ if(c==='\r'&&txt[i+1]==='\n') i++; fila.push(campo); filas.push(fila); fila=[]; campo=""; }
+    else campo+=c;
+  }
+  if(campo||fila.length){ fila.push(campo); filas.push(fila); }
+  return filas.filter(f=>f.some(x=>x.trim()));
+}
+function linkFoto(u){ // acepta links de Google Drive
+  const m=String(u).match(/drive\.google\.com\/(?:file\/d\/|open\?id=|uc\?id=)([\w-]+)/);
+  return m ? "https://drive.google.com/thumbnail?id="+m[1]+"&sz=w1000" : u;
+}
+function pintarPropias(lista,ejemplo){
+  const c=document.getElementById("propias");
+  document.getElementById("propiasEstado").textContent = ejemplo ? "" : (lista.length? "" : "Pronto vas a encontrar acá las noticias de la radio");
+  c.innerHTML=lista.map(n=>`<article class="nota">
+      ${n.foto?`<img src="${esc(linkFoto(n.foto))}" alt="" loading="lazy">`:""}
+      <div class="cuerpo">
+        ${ejemplo?'<span class="ej">Ejemplo</span>':""}
+        ${n.fecha?`<time>${esc(n.fecha)}</time>`:""}
+        <h4>${esc(n.titulo)}</h4>
+        ${n.texto?`<p>${esc(n.texto)}</p>`:""}
+        ${n.link?`<a class="mas" href="${esc(n.link)}" target="_blank" rel="noopener">Leer más →</a>`:""}
+      </div></article>`).join("");
+}
+async function cargarPropias(){
+  if(!NOTICIAS_CSV){ pintarPropias(NOTICIAS_EJEMPLO,true); return; }
+  try{
+    const r=await fetch(NOTICIAS_CSV+(NOTICIAS_CSV.includes("?")?"&":"?")+"t="+Date.now());
+    const filas=parseCSV(await r.text()).slice(1);
+    const lista=filas.map(f=>({fecha:(f[0]||"").trim(),titulo:(f[1]||"").trim(),texto:(f[2]||"").trim(),foto:(f[3]||"").trim(),link:(f[4]||"").trim()}))
+                     .filter(n=>n.titulo).reverse().slice(0,9);
+    pintarPropias(lista,false);
+  }catch(e){ document.getElementById("propiasEstado").textContent="No pudimos cargar las noticias"; }
+}
+function hace(fecha){
+  const min=Math.round((Date.now()-fecha)/60000);
+  if(isNaN(min)) return "";
+  if(min<60) return `hace ${Math.max(min,1)} min`;
+  if(min<1440) return `hace ${Math.round(min/60)} h`;
+  const d=Math.round(min/1440); return d===1?"ayer":`hace ${d} días`;
+}
+const cacheTit={};
+async function cargarTitulares(i){
+  const ul=document.getElementById("titulares"), f=TITULARES[i];
+  document.querySelectorAll("#fuentes button").forEach((b,j)=>b.setAttribute("aria-selected",String(i===j)));
+  if(!cacheTit[i]){
+    ul.innerHTML='<li class="estado">Cargando titulares…</li>';
+    try{
+      const r=await fetch("https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent(f.rss));
+      const j=await r.json(); if(j.status!=="ok") throw 0;
+      cacheTit[i]=j.items.map(it=>{
+        let t=it.title||"", fuente=it.author||"";
+        const k=t.lastIndexOf(" - "); if(k>0){ fuente=fuente||t.slice(k+3); t=t.slice(0,k); }
+        return {t,fuente,link:it.link,fecha:new Date((it.pubDate||"").replace(" ","T")+"Z")};
+      }).sort((a,b)=>b.fecha-a.fecha);
+    }catch(e){ ul.innerHTML='<li class="estado">No pudimos cargar los titulares en este momento. Probá de nuevo en un rato.</li>'; return; }
+  }
+  const items=cacheTit[i];
+  ul.innerHTML = items.length ? items.map(n=>`<li><a href="${esc(n.link)}" target="_blank" rel="noopener">
+      <b>${esc(n.t)}</b><span>${hace(n.fecha)}</span>${n.fuente?`<em>${esc(n.fuente)}</em>`:""}</a></li>`).join("")
+    : '<li class="estado">No hay titulares nuevos por ahora.</li>';
+}
+(function(){
+  const c=document.getElementById("fuentes");
+  TITULARES.forEach((f,i)=>{ const b=document.createElement("button"); b.type="button"; b.setAttribute("role","tab"); b.id="fuente-"+i; b.textContent=f.nombre; b.onclick=()=>cargarTitulares(i); c.appendChild(b); });
+  cargarPropias(); cargarTitulares(0);
+})();
+
+// ===== Auspiciantes (carrusel) =====
+(function(){
+  const car=document.getElementById("carrusel"), pts=document.getElementById("carPuntos");
+  if(!AUSPICIANTES.length){ document.getElementById("auspiciantes").hidden=true; return; }
+  car.innerHTML=AUSPICIANTES.map((a,i)=>{
+    const tag=a.link?"a":"div", href=a.link?` href="${esc(a.link)}" target="_blank" rel="noopener"`:"";
+    const cont=a.imagen
+      ? `<img src="${esc(linkFoto(a.imagen))}" alt="${esc(a.nombre||"Auspiciante")}" loading="lazy">`
+      : `<div class="aviso" style="--fondo-aviso:${esc(a.color||"linear-gradient(120deg,#122331,#21384a)")}">
+           ${a.ejemplo?'<span class="ej">Ejemplo</span>':""}
+           ${a.rubro?`<small>${esc(a.rubro)}</small>`:""}<b>${esc(a.nombre)}</b>
+           ${a.texto?`<p>${esc(a.texto)}</p>`:""}${a.dato?`<span class="dato">${esc(a.dato)}</span>`:""}</div>`;
+    return `<${tag} class="slide${i?"":" activa"}"${href} role="group" aria-label="${i+1} de ${AUSPICIANTES.length}">${cont}</${tag}>`;
+  }).join("");
+  pts.innerHTML=AUSPICIANTES.map((a,i)=>`<button type="button" aria-label="Ver aviso ${i+1}"${i?"":' aria-current="true"'}></button>`).join("");
+  const slides=[...car.children], dots=[...pts.children];
+  let actual=0, timer=null;
+  function ir(n){
+    slides[actual].classList.remove("activa"); dots[actual].removeAttribute("aria-current");
+    actual=(n+slides.length)%slides.length;
+    slides[actual].classList.add("activa"); dots[actual].setAttribute("aria-current","true");
+  }
+  function arrancar(){ parar(); if(slides.length>1) timer=setInterval(()=>ir(actual+1),SEGUNDOS_POR_AVISO*1000); }
+  function parar(){ clearInterval(timer); }
+  dots.forEach((d,i)=>d.onclick=()=>{ir(i);arrancar();});
+  document.getElementById("carPrev").onclick=()=>{ir(actual-1);arrancar();};
+  document.getElementById("carNext").onclick=()=>{ir(actual+1);arrancar();};
+  car.addEventListener("mouseenter",parar); car.addEventListener("mouseleave",arrancar);
+  document.addEventListener("visibilitychange",()=>document.hidden?parar():arrancar());
+  arrancar();
+})();
 
 // Menú en celular
 const menuBtn=document.getElementById("menuBtn"), menu=document.getElementById("menu");
