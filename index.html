@@ -300,7 +300,7 @@ footer .ig:hover{color:var(--ambar)}
         </button>
         <div class="grab-info">
           <h3>Grabá la radio</h3>
-          <p class="ayuda">Grabá una entrevista o un programa mientras sale al aire y descargalo en MP3. Dejá la página abierta hasta tocar Detener.</p>
+          <p class="ayuda">Grabá una entrevista o un programa mientras sale al aire y descargalo en MP3. Graba en silencio: no hace falta tener la radio sonando. Dejá la página abierta hasta tocar Detener.</p>
           <div class="rec-estado"><span class="luz"></span><b id="recTiempo">00:00:00</b><span id="recPeso">Listo para grabar</span></div>
           <div class="rec-fila">
             <button class="rec-btn rojo" type="button" id="recGrabar">● Grabar</button>
@@ -644,13 +644,23 @@ async function cargarTitulares(i){
     try{ lock&&lock.release(); }catch(_){}
     ac=el=proc=lock=null;
   }
-  async function grabar(){
+  // Se precarga el codificador MP3 apenas abre la página, así al tocar Grabar no hay esperas
+  cargarLame().catch(()=>{});
+  function fallo(err){
+    limpiar(); ui(false);
+    if(err&&err.name==="NotAllowedError") msg("El navegador bloqueó la grabación. Tocá Grabar de nuevo.");
+    else msg("No se pudo grabar: la radio no está transmitiendo online en este momento, o el servidor no permite grabar desde la web.");
+  }
+  function grabar(){
+    // Todo lo que necesita "permiso de toque" (audio y reproducción) se arranca acá mismo, sin esperas,
+    // porque los celulares bloquean el audio si se inicia después de una espera.
     if(activo) return;
-    ui(true); msg("Preparando la grabación…"); partes=[]; bytes=0; sono=false;
-    try{ await cargarLame(); }catch(_){ ui(false); msg("No se pudo preparar el grabador. Revisá la conexión a internet y probá de nuevo."); return; }
+    if(!window.lamejs){ msg("Preparando el grabador… tocá Grabar de nuevo en unos segundos."); cargarLame().catch(()=>msg("No se pudo preparar el grabador. Revisá la conexión a internet.")); return; }
+    partes=[]; bytes=0; sono=false;
     try{
-      ac=new (window.AudioContext||window.webkitAudioContext)(); await ac.resume();
-      el=new Audio(); el.crossOrigin="anonymous"; el.preload="auto";
+      ac=new (window.AudioContext||window.webkitAudioContext)();
+      const reanudar=ac.resume();
+      el=new Audio(); el.crossOrigin="anonymous"; el.preload="auto"; el.setAttribute("playsinline","");
       const base=STREAM_URLS[0]; el.src=base+(base.includes("?")?"&":"?")+"rec="+Date.now();
       const fuente=ac.createMediaElementSource(el), mudo=ac.createGain(); mudo.gain.value=0;
       proc=ac.createScriptProcessor(4096,2,2);
@@ -664,17 +674,15 @@ async function cargarTitulares(i){
         if(out.length){ partes.push(new Int8Array(out)); bytes+=out.length; }
       };
       el.onerror=()=>{ if(!activo) return;
-        if(bytes>20000){ terminar("Se cortó la transmisión. Se guardó lo grabado hasta ahí."); }
-        else { limpiar(); ui(false); msg("No se pudo grabar: la radio no está transmitiendo online en este momento, o el servidor no permite grabar desde la web."); } };
-      activo=true; t0=Date.now(); tick(); reloj=setInterval(tick,500);
-      await el.play();
-      msg("Grabando. No cierres esta página.");
-      try{ lock=await navigator.wakeLock?.request("screen"); }catch(_){}
-      chequeo=setTimeout(()=>{ if(activo&&!sono) msg("Grabando, pero no llega sonido. Fijate que la radio esté transmitiendo online."); },10000);
-    }catch(err){
-      if(activo&&bytes>20000){ terminar("Se cortó la transmisión. Se guardó lo grabado hasta ahí."); return; }
-      limpiar(); ui(false); msg("No se pudo grabar: la radio no está transmitiendo online en este momento, o el servidor no permite grabar desde la web.");
-    }
+        if(bytes>20000) terminar("Se cortó la transmisión. Se guardó lo grabado hasta ahí."); else fallo(); };
+      const reproducir=el.play();
+      activo=true; ui(true); msg("Conectando con la transmisión…"); t0=Date.now(); tick(); reloj=setInterval(tick,500);
+      Promise.all([reanudar,reproducir]).then(async()=>{
+        msg("Grabando. No cierres esta página ni bloquees el celular.");
+        try{ lock=await navigator.wakeLock?.request("screen"); }catch(_){}
+        chequeo=setTimeout(()=>{ if(activo&&!sono) msg("Grabando, pero no llega sonido. Fijate que la radio esté transmitiendo online."); },10000);
+      }).catch(err=>{ if(activo&&bytes>20000) terminar("Se cortó la transmisión. Se guardó lo grabado hasta ahí."); else fallo(err); });
+    }catch(err){ fallo(err); }
   }
   function terminar(texto){
     if(!activo) return;
