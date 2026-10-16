@@ -620,88 +620,131 @@ async function cargarTitulares(i){
 })();
 
 // ===== Grabadora MP3 =====
+// Descarga la transmisión directamente (sin reproducirla, así no suena nada ni acopla)
+// y la convierte a MP3 de a pedacitos mientras graba.
 (function(){
   const $=id=>document.getElementById(id), caja=$("grabadora");
   const LAME_URL="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js";
-  let ac=null, el=null, proc=null, enc=null, partes=[], bytes=0, t0=0, reloj=null, lock=null, activo=false, sono=false, chequeo=null;
+  let activo=false, ctrl=null, partes=[], bytes=0, t0=0, reloj=null, lock=null;
+  let ctx=null, enc=null, pendiente=new Uint8Array(0), solape=null, cola=Promise.resolve(), modo="mp3", crudo=[], intentos=0;
   const dos=n=>String(n).padStart(2,"0");
   const hms=s=>`${dos(Math.floor(s/3600))}:${dos(Math.floor(s/60)%60)}:${dos(Math.floor(s%60))}`;
-  const nombre=()=>{ const d=new Date(); return `FM-Deseado-${d.getFullYear()}-${dos(d.getMonth()+1)}-${dos(d.getDate())}-${dos(d.getHours())}h${dos(d.getMinutes())}.mp3`; };
+  const nombre=ext=>{ const d=new Date(); return `FM-Deseado-${d.getFullYear()}-${dos(d.getMonth()+1)}-${dos(d.getDate())}-${dos(d.getHours())}h${dos(d.getMinutes())}.${ext}`; };
   const msg=t=>$("recMsg").textContent=t;
-  function tick(){ $("recTiempo").textContent=hms((Date.now()-t0)/1000); $("recPeso").textContent=(bytes/1048576).toFixed(1)+" MB"; }
+  const tamano=()=>modo==="mp3"?bytes:crudo.reduce((a,b)=>a+b.length,0);
+  function tick(){ $("recTiempo").textContent=hms((Date.now()-t0)/1000); $("recPeso").textContent=(tamano()/1048576).toFixed(1)+" MB"; }
   function ui(on){ caja.classList.toggle("grabando",on); $("recGrabar").disabled=on; $("recDetener").disabled=!on; }
   function cargarLame(){
     if(window.lamejs) return Promise.resolve();
     return new Promise((ok,mal)=>{ const s=document.createElement("script"); s.src=LAME_URL; s.onload=ok; s.onerror=mal; document.head.appendChild(s); });
   }
-  function aInt16(f){ const o=new Int16Array(f.length); for(let i=0;i<f.length;i++){ const v=Math.max(-1,Math.min(1,f[i])); o[i]=v<0?v*0x8000:v*0x7FFF; } return o; }
-  function limpiar(){
-    activo=false; clearInterval(reloj); clearTimeout(chequeo);
-    try{ proc&&(proc.onaudioprocess=null); }catch(_){}
-    try{ el&&(el.pause(), el.removeAttribute("src"), el.load()); }catch(_){}
-    try{ ac&&ac.close(); }catch(_){}
-    try{ lock&&lock.release(); }catch(_){}
-    ac=el=proc=lock=null;
-  }
-  // Se precarga el codificador MP3 apenas abre la página, así al tocar Grabar no hay esperas
   cargarLame().catch(()=>{});
-  function fallo(err){
-    limpiar(); ui(false);
-    if(err&&err.name==="NotAllowedError") msg("El navegador bloqueó la grabación. Tocá Grabar de nuevo.");
-    else msg("No se pudo grabar: la radio no está transmitiendo online en este momento, o el servidor no permite grabar desde la web.");
+  const unir=(a,b)=>{ const c=new Uint8Array(a.length+b.length); c.set(a); c.set(b,a.length); return c; };
+
+  // Separa cuadros AAC (ADTS) completos; devuelve [cuadros, resto]
+  function cortarCuadros(buf){
+    const cuadros=[]; let i=0;
+    while(i+7<=buf.length){
+      if(buf[i]!==0xFF||(buf[i+1]&0xF6)!==0xF0){ i++; continue; }
+      const len=((buf[i+3]&3)<<11)|(buf[i+4]<<3)|(buf[i+5]>>5);
+      if(len<7){ i++; continue; }
+      if(i+len>buf.length) break;
+      if(i+len+1<buf.length && !(buf[i+len]===0xFF&&(buf[i+len+1]&0xF6)===0xF0)){ i++; continue; }
+      cuadros.push(buf.subarray(i,i+len)); i+=len;
+    }
+    return [cuadros, buf.slice(i)];
   }
-  function grabar(){
-    // Todo lo que necesita "permiso de toque" (audio y reproducción) se arranca acá mismo, sin esperas,
-    // porque los celulares bloquean el audio si se inicia después de una espera.
+  const juntar=arr=>{ let n=0; arr.forEach(a=>n+=a.length); const o=new Uint8Array(n); let p=0; arr.forEach(a=>{o.set(a,p);p+=a.length;}); return o; };
+  function decodificar(u8){
+    return new Promise((ok,mal)=>{ const ab=u8.buffer.slice(u8.byteOffset,u8.byteOffset+u8.byteLength);
+      const p=ctx.decodeAudioData(ab,ok,mal); if(p&&p.then) p.then(ok,mal); });
+  }
+  function aInt16(f,desde){ const o=new Int16Array(f.length-desde); for(let i=desde;i<f.length;i++){ const v=Math.max(-1,Math.min(1,f[i])); o[i-desde]=v<0?v*0x8000:v*0x7FFF; } return o; }
+  async function convertir(cuadros){
+    if(!cuadros.length) return;
+    const previos=solape||[]; const todos=previos.concat(cuadros);
+    solape=cuadros.slice(-2);
+    let audio;
+    try{ audio=await decodificar(juntar(todos)); }
+    catch(e){ pasarACrudo(); return; }
+    const porCuadro=audio.length/todos.length, saltar=Math.round(porCuadro*previos.length);
+    if(!enc) enc=new lamejs.Mp3Encoder(2, audio.sampleRate, 128);
+    const L=audio.getChannelData(0), R=audio.numberOfChannels>1?audio.getChannelData(1):L;
+    const out=enc.encodeBuffer(aInt16(L,saltar),aInt16(R,saltar));
+    if(out.length){ partes.push(new Int8Array(out)); bytes+=out.length; }
+  }
+  // Si el navegador no puede convertir, se guarda el audio original (.aac)
+  function pasarACrudo(){ if(modo==="crudo") return; modo="crudo"; }
+
+  function recibir(trozo){
+    crudo.push(trozo); // copia del audio original, por si la conversión a MP3 falla
+    if(modo!=="mp3") return;
+    pendiente=unir(pendiente,trozo);
+    if(pendiente.length<120000) return;
+    const [cuadros,resto]=cortarCuadros(pendiente); pendiente=resto;
+    cola=cola.then(()=>convertir(cuadros));
+  }
+  async function conectar(){
+    const base=STREAM_URLS[0];
+    ctrl=new AbortController();
+    const r=await fetch(base+(base.includes("?")?"&":"?")+"rec="+Date.now(),{signal:ctrl.signal,cache:"no-store"});
+    if(!r.ok||!r.body) throw new Error("http "+r.status);
+    const ct=(r.headers.get("content-type")||"").toLowerCase();
+    if(ct.includes("mpeg")||ct.includes("mp3")) modo="directo";
+    msg("Grabando. No cierres esta página ni bloquees el celular.");
+    const lector=r.body.getReader();
+    while(true){ const {done,value}=await lector.read(); if(done) break; recibir(value); intentos=0; }
+  }
+  async function bucle(){
+    while(activo){
+      try{ await conectar(); }
+      catch(e){ if(e.name==="AbortError"||!activo) return;
+        if(tamano()<5000 && intentos>=2){ fallo(); return; } }
+      if(!activo) return;
+      intentos++; msg("Se cortó la señal, reconectando…");
+      solape=null; pendiente=new Uint8Array(0);
+      await new Promise(r=>setTimeout(r,1500));
+    }
+  }
+  function fallo(){
+    activo=false; clearInterval(reloj); ui(false); soltar();
+    msg("No se pudo grabar: la radio no está transmitiendo online en este momento. Probá de nuevo en un rato.");
+  }
+  function soltar(){ try{ lock&&lock.release(); }catch(_){} lock=null; try{ ctx&&ctx.close(); }catch(_){} ctx=null; }
+
+  async function grabar(){
     if(activo) return;
-    if(!window.lamejs){ msg("Preparando el grabador… tocá Grabar de nuevo en unos segundos."); cargarLame().catch(()=>msg("No se pudo preparar el grabador. Revisá la conexión a internet.")); return; }
-    partes=[]; bytes=0; sono=false;
-    try{
-      ac=new (window.AudioContext||window.webkitAudioContext)();
-      const reanudar=ac.resume();
-      el=new Audio(); el.crossOrigin="anonymous"; el.preload="auto"; el.setAttribute("playsinline","");
-      const base=STREAM_URLS[0]; el.src=base+(base.includes("?")?"&":"?")+"rec="+Date.now();
-      const fuente=ac.createMediaElementSource(el), mudo=ac.createGain(); mudo.gain.value=0;
-      proc=ac.createScriptProcessor(4096,2,2);
-      fuente.connect(proc); proc.connect(mudo); mudo.connect(ac.destination);
-      enc=new lamejs.Mp3Encoder(2, ac.sampleRate, 128);
-      proc.onaudioprocess=e=>{
-        if(!activo) return;
-        const b=e.inputBuffer, L=b.getChannelData(0), R=b.numberOfChannels>1?b.getChannelData(1):L;
-        if(!sono){ for(let i=0;i<L.length;i+=64){ if(Math.abs(L[i])>0.001){ sono=true; break; } } }
-        const out=enc.encodeBuffer(aInt16(L),aInt16(R));
-        if(out.length){ partes.push(new Int8Array(out)); bytes+=out.length; }
-      };
-      let intentos=0;
-      const reconectar=()=>{ if(!activo) return;
-        if(bytes<20000 && intentos>=2){ const c=el&&el.error?` (código ${el.error.code})`:""; fallo(); msg($("recMsg").textContent+c); return; }
-        intentos++; msg("Se cortó la señal, reconectando…");
-        setTimeout(()=>{ if(!activo) return; el.src=base+(base.includes("?")?"&":"?")+"rec="+Date.now(); el.play().then(()=>msg("Grabando. No cierres esta página ni bloquees el celular.")).catch(()=>{}); },1500);
-      };
-      el.onerror=reconectar;
-      el.onended=reconectar;
-      const reproducir=el.play();
-      activo=true; ui(true); msg("Conectando con la transmisión…"); t0=Date.now(); tick(); reloj=setInterval(tick,500);
-      Promise.all([reanudar,reproducir]).then(async()=>{
-        msg("Grabando. No cierres esta página ni bloquees el celular.");
-        try{ lock=await navigator.wakeLock?.request("screen"); }catch(_){}
-        chequeo=setTimeout(()=>{ if(activo&&!sono) msg("Grabando, pero no llega sonido. Fijate que la radio esté transmitiendo online."); },10000);
-      }).catch(err=>{ if(activo&&bytes>20000) terminar("Se cortó la transmisión. Se guardó lo grabado hasta ahí."); else fallo(err); });
-    }catch(err){ fallo(err); }
+    partes=[]; bytes=0; crudo=[]; enc=null; solape=null; pendiente=new Uint8Array(0); cola=Promise.resolve(); intentos=0;
+    modo=window.lamejs?"mp3":"crudo";
+    try{ ctx=new (window.AudioContext||window.webkitAudioContext)(); }catch(_){ modo="crudo"; }
+    activo=true; ui(true); msg("Conectando con la transmisión…"); t0=Date.now(); tick(); reloj=setInterval(tick,500);
+    try{ lock=await navigator.wakeLock?.request("screen"); }catch(_){}
+    bucle();
   }
-  function terminar(texto){
+  async function detener(){
     if(!activo) return;
-    const fin=enc?enc.flush():[]; if(fin.length){ partes.push(new Int8Array(fin)); bytes+=fin.length; }
-    tick(); limpiar(); ui(false);
-    if(bytes<2000){ msg("No llegó audio para guardar."); return; }
-    const blob=new Blob(partes,{type:"audio/mpeg"}), url=URL.createObjectURL(blob), archivo=nombre();
-    const a=document.createElement("a"); a.href=url; a.download=archivo; document.body.appendChild(a); a.click(); a.remove();
-    partes=[]; setTimeout(()=>URL.revokeObjectURL(url),60000);
-    msg(texto+" Se descargó "+archivo+" ("+(bytes/1048576).toFixed(1)+" MB).");
+    activo=false; try{ ctrl&&ctrl.abort(); }catch(_){}
+    clearInterval(reloj); ui(false); msg("Guardando el archivo…");
+    if(modo==="mp3"){ const [cuadros]=cortarCuadros(pendiente); pendiente=new Uint8Array(0); cola=cola.then(()=>convertir(cuadros)); }
+    await cola;
+    let blob, archivo;
+    if(modo==="mp3"&&bytes>0){
+      const fin=enc?enc.flush():[]; if(fin.length) partes.push(new Int8Array(fin));
+      blob=new Blob(partes,{type:"audio/mpeg"}); archivo=nombre("mp3");
+    } else {
+      blob=new Blob(crudo,{type:modo==="directo"?"audio/mpeg":"audio/aac"}); archivo=nombre(modo==="directo"?"mp3":"aac");
+    }
+    soltar(); tick();
+    if(blob.size<2000){ msg("No llegó audio para guardar."); return; }
+    const url=URL.createObjectURL(blob), a=document.createElement("a");
+    a.href=url; a.download=archivo; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),60000);
+    msg("Grabación guardada: "+archivo+" ("+(blob.size/1048576).toFixed(1)+" MB).");
+    partes=[]; crudo=[];
   }
   $("recGrabar").onclick=grabar;
-  $("recCasete").onclick=()=>activo?terminar("Grabación guardada."):grabar();
-  $("recDetener").onclick=()=>terminar("Grabación guardada.");
+  $("recDetener").onclick=detener;
+  $("recCasete").onclick=()=>activo?detener():grabar();
   addEventListener("beforeunload",e=>{ if(activo){ e.preventDefault(); e.returnValue=""; } });
 })();
 
