@@ -307,7 +307,6 @@ footer .ig:hover{color:var(--ambar)}
             <button class="rec-btn gris" type="button" id="recDetener" disabled>■ Detener</button>
           </div>
           <p class="rec-msg" id="recMsg"></p>
-          <ul class="rec-lista" id="recLista"></ul>
         </div>
       </div>
 
@@ -673,8 +672,14 @@ async function cargarTitulares(i){
         const out=enc.encodeBuffer(aInt16(L),aInt16(R));
         if(out.length){ partes.push(new Int8Array(out)); bytes+=out.length; }
       };
-      el.onerror=()=>{ if(!activo) return;
-        if(bytes>20000) terminar("Se cortó la transmisión. Se guardó lo grabado hasta ahí."); else fallo(); };
+      let intentos=0;
+      const reconectar=()=>{ if(!activo) return;
+        if(bytes<20000 && intentos>=2){ const c=el&&el.error?` (código ${el.error.code})`:""; fallo(); msg($("recMsg").textContent+c); return; }
+        intentos++; msg("Se cortó la señal, reconectando…");
+        setTimeout(()=>{ if(!activo) return; el.src=base+(base.includes("?")?"&":"?")+"rec="+Date.now(); el.play().then(()=>msg("Grabando. No cierres esta página ni bloquees el celular.")).catch(()=>{}); },1500);
+      };
+      el.onerror=reconectar;
+      el.onended=reconectar;
       const reproducir=el.play();
       activo=true; ui(true); msg("Conectando con la transmisión…"); t0=Date.now(); tick(); reloj=setInterval(tick,500);
       Promise.all([reanudar,reproducir]).then(async()=>{
@@ -691,10 +696,8 @@ async function cargarTitulares(i){
     if(bytes<2000){ msg("No llegó audio para guardar."); return; }
     const blob=new Blob(partes,{type:"audio/mpeg"}), url=URL.createObjectURL(blob), archivo=nombre();
     const a=document.createElement("a"); a.href=url; a.download=archivo; document.body.appendChild(a); a.click(); a.remove();
-    const li=document.createElement("li");
-    li.innerHTML=`<span>${archivo} · ${(bytes/1048576).toFixed(1)} MB</span><a href="${url}" download="${archivo}">Descargar</a>`;
-    $("recLista").prepend(li); partes=[];
-    msg(texto+" Si no se descargó solo, tocá Descargar.");
+    partes=[]; setTimeout(()=>URL.revokeObjectURL(url),60000);
+    msg(texto+" Se descargó "+archivo+" ("+(bytes/1048576).toFixed(1)+" MB).");
   }
   $("recGrabar").onclick=grabar;
   $("recCasete").onclick=()=>activo?terminar("Grabación guardada."):grabar();
