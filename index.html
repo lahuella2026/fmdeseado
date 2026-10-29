@@ -203,6 +203,17 @@ h2{font:900 clamp(40px,7vw,64px)/.95 var(--display);text-transform:uppercase;mar
 
 .ahora .oyentes{grid-column:2;margin-top:4px;color:var(--ambar);font-weight:700;font-size:14px}
 @media (max-width:520px){.ahora .oyentes{grid-column:1}}
+/* Aniversario: sello 15 años sobre la ventana de la foto */
+.sello{position:absolute;z-index:2;right:3%;top:9%;width:clamp(116px,20%,184px);aspect-ratio:1;display:grid;place-items:center;filter:drop-shadow(0 10px 22px rgba(0,0,0,.55))}
+.sello svg{position:absolute;inset:0;width:100%;height:100%}
+@keyframes gira{to{transform:rotate(360deg)}}
+.sello .c{position:relative;text-align:center;color:#4a3206;line-height:.88;font-family:var(--display);font-weight:900;text-transform:uppercase;text-shadow:0 1px 0 rgba(255,240,190,.7)}
+.sello .c b{display:block;font-size:clamp(38px,4.2vw,60px)}
+.sello .c span{display:block;font-size:clamp(12px,1.25vw,17px);letter-spacing:.1em}
+.sello::after{content:"";position:absolute;inset:0;border-radius:50%;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.55) 48%,transparent 60%);background-size:250% 100%;animation:destello 5s ease-in-out infinite;mix-blend-mode:overlay}
+@keyframes destello{0%,60%{background-position:120% 0}100%{background-position:-120% 0}}
+@media (max-width:760px){.sello{width:100px;right:10px;top:12px}.sello .c b{font-size:34px}.sello .c span{font-size:10px}}
+@media (prefers-reduced-motion:reduce){.sello svg.aro,.sello::after{animation:none}}
 /* Contacto */
 .contacto{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .contacto div{border:1px solid var(--linea);border-radius:12px;padding:18px 20px}
@@ -258,7 +269,16 @@ footer .ig:hover{color:var(--ambar)}
 
 <main>
   <section class="portada" id="inicio">
-    <div class="mic" role="img" aria-label="Micrófono en el estudio con el cartel On Air encendido"></div>
+    <div class="mic" role="img" aria-label="Micrófono en el estudio con el cartel On Air encendido"><div class="sello" role="img" aria-label="15 años juntos">
+          <svg class="base" viewBox="0 0 200 200" aria-hidden="true"><defs>
+<linearGradient id="oro1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1b8"/><stop offset=".28" stop-color="#e2b24a"/><stop offset=".5" stop-color="#fbe39a"/><stop offset=".72" stop-color="#b9862c"/><stop offset="1" stop-color="#f2d27a"/></linearGradient>
+<linearGradient id="oro2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6dc8c"/><stop offset=".45" stop-color="#d6a443"/><stop offset=".7" stop-color="#fff0b5"/><stop offset="1" stop-color="#c08e33"/></linearGradient></defs>
+<polygon points="199.0,100.0 192.8,106.1 198.2,112.9 191.2,118.1 195.6,125.6 188.1,129.9 191.5,137.9 183.4,141.1 185.7,149.5 177.3,151.7 178.5,160.3 169.9,161.3 170.0,170.0 161.3,169.9 160.3,178.5 151.7,177.3 149.5,185.7 141.1,183.4 137.9,191.5 129.9,188.1 125.6,195.6 118.1,191.2 112.9,198.2 106.1,192.8 100.0,199.0 93.9,192.8 87.1,198.2 81.9,191.2 74.4,195.6 70.1,188.1 62.1,191.5 58.9,183.4 50.5,185.7 48.3,177.3 39.7,178.5 38.7,169.9 30.0,170.0 30.1,161.3 21.5,160.3 22.7,151.7 14.3,149.5 16.6,141.1 8.5,137.9 11.9,129.9 4.4,125.6 8.8,118.1 1.8,112.9 7.2,106.1 1.0,100.0 7.2,93.9 1.8,87.1 8.8,81.9 4.4,74.4 11.9,70.1 8.5,62.1 16.6,58.9 14.3,50.5 22.7,48.3 21.5,39.7 30.1,38.7 30.0,30.0 38.7,30.1 39.7,21.5 48.3,22.7 50.5,14.3 58.9,16.6 62.1,8.5 70.1,11.9 74.4,4.4 81.9,8.8 87.1,1.8 93.9,7.2 100.0,1.0 106.1,7.2 112.9,1.8 118.1,8.8 125.6,4.4 129.9,11.9 137.9,8.5 141.1,16.6 149.5,14.3 151.7,22.7 160.3,21.5 161.3,30.1 170.0,30.0 169.9,38.7 178.5,39.7 177.3,48.3 185.7,50.5 183.4,58.9 191.5,62.1 188.1,70.1 195.6,74.4 191.2,81.9 198.2,87.1 192.8,93.9" fill="url(#oro1)" stroke="#9a6d1c" stroke-width="1"/>
+<circle cx="100" cy="100" r="88" fill="none" stroke="#8a5f14" stroke-width="1.2"/>
+<circle cx="100" cy="100" r="64" fill="url(#oro2)" stroke="#8a5f14" stroke-width="1.5"/>
+<circle cx="100" cy="100" r="59" fill="none" stroke="#a87a26" stroke-width=".8" stroke-dasharray="2 2.5"/></svg>
+          <svg class="aro" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="arcoSup" d="M27,100 A73,73 0 0,1 173,100"/><path id="arcoInf" d="M20,100 A80,80 0 0,0 180,100"/></defs><g font-family="Big Shoulders Display, Impact, sans-serif" font-weight="900" font-size="17" letter-spacing="2.5" fill="#5a3d08" text-anchor="middle"><text><textPath href="#arcoSup" startOffset="50%">FM DESEADO 103.5</textPath></text><text><textPath href="#arcoInf" startOffset="50%">DONDE VOS ESTÁS</textPath></text><text x="22" y="105" font-size="12">★</text><text x="178" y="105" font-size="12">★</text></g></svg>
+          <div class="c"><b>15</b><span>años<br>juntos</span></div></div></div>
     <div class="wrap">
       <div class="cabeza">
         <p class="sobre">Frecuencia modulada · 103.5 MHz</p>
@@ -756,20 +776,27 @@ async function cargarTitulares(i){
 
 // ===== Oyentes conectados (dato real del servidor de la radio) =====
 (function(){
-  // Solo se muestra entrando con el link privado: www.fmdeseado.com/#oyentes
+  // Solo para el dueño: se activa una vez con www.fmdeseado.com/#oyentes y queda activado en ese
+  // celular o computadora (también al abrir desde el ícono). Se desactiva con #ocultaroyentes
   const el=document.getElementById("oyentes");
-  if(location.hash!=="#oyentes") return;
+  let priv=false;
+  try{
+    if(location.hash==="#oyentes") localStorage.setItem("fmd_oyentes","1");
+    if(location.hash==="#ocultaroyentes") localStorage.removeItem("fmd_oyentes");
+    priv=localStorage.getItem("fmd_oyentes")==="1";
+  }catch(_){ priv=location.hash==="#oyentes"; }
+  if(!priv) return;
   const url=STREAM_URLS[0].replace(/\/[^\/]*$/,"/status-json.xsl");
   async function leer(){
     try{
       const r=await fetch(url+"?t="+Date.now(),{cache:"no-store"}); const j=await r.json();
-      let f=j.icestats&&j.icestats.source; if(!f){ el.hidden=true; return; }
+      let f=j.icestats&&j.icestats.source; if(!f){ el.textContent="🎧 La radio no está transmitiendo online ahora"; el.hidden=false; return; }
       if(!Array.isArray(f)) f=[f];
       const m=f.find(x=>String(x.listenurl||"").endsWith("/stream"))||f[0];
       const n=Number(m.listeners);
-      if(isNaN(n)||n<1){ el.hidden=true; return; }
-      el.textContent=`🎧 ${n} ${n===1?"persona escuchando":"personas escuchando"} ahora por internet`; el.hidden=false;
-    }catch(_){ el.hidden=true; }
+      if(isNaN(n)){ el.hidden=true; return; }
+      el.textContent=`🎧 ${n} ${n===1?"persona escuchando":"personas escuchando"} ahora por internet (solo lo ves vos)`; el.hidden=false;
+    }catch(_){ el.textContent="🎧 No se pudo leer la cantidad de oyentes en este momento"; el.hidden=false; }
   }
   leer(); setInterval(leer,30000);
 })();
