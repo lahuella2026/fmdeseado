@@ -585,6 +585,27 @@ function hace(fecha){
   if(min<1440) return `hace ${Math.round(min/60)} h`;
   const d=Math.round(min/1440); return d===1?"ayer":`hace ${d} días`;
 }
+// Trae un RSS probando varios intermediarios: si uno falla, usa el siguiente.
+function conTiempo(url,ms){ const c=new AbortController(); const t=setTimeout(()=>c.abort(),ms);
+  return fetch(url,{signal:c.signal,cache:"no-store"}).finally(()=>clearTimeout(t)); }
+function leerXML(txt){
+  const d=new DOMParser().parseFromString(txt,"text/xml");
+  const items=[...d.querySelectorAll("item")];
+  if(!items.length && !d.querySelector("channel")) throw 0;
+  return items.map(it=>({title:it.querySelector("title")?.textContent||"", link:it.querySelector("link")?.textContent||"",
+    fuente:it.querySelector("source")?.textContent||"", fecha:new Date(it.querySelector("pubDate")?.textContent||"")}));
+}
+async function traerRSS(rss){
+  const u=encodeURIComponent(rss), intentos=[
+    async()=>{ const r=await conTiempo("https://api.allorigins.win/raw?url="+u+"&t="+Date.now(),8000); if(!r.ok) throw 0; return leerXML(await r.text()); },
+    async()=>{ const r=await conTiempo("https://corsproxy.io/?url="+u,8000); if(!r.ok) throw 0; return leerXML(await r.text()); },
+    async()=>{ const r=await conTiempo("https://api.codetabs.com/v1/proxy/?quest="+u,8000); if(!r.ok) throw 0; return leerXML(await r.text()); },
+    async()=>{ const r=await conTiempo("https://api.rss2json.com/v1/api.json?rss_url="+u,8000); const j=await r.json(); if(j.status!=="ok") throw 0;
+      return j.items.map(it=>({title:it.title,link:it.link,fuente:it.author||"",fecha:new Date((it.pubDate||"").replace(" ","T")+"Z")})); },
+  ];
+  for(const f of intentos){ try{ return await f(); }catch(e){} }
+  throw new Error("sin titulares");
+}
 const MAX_DIAS = 3; // los titulares con más de 3 días no se muestran
 const cacheTit={};
 async function cargarTitulares(i){
@@ -593,13 +614,12 @@ async function cargarTitulares(i){
   if(!cacheTit[i]){
     ul.innerHTML='<li class="estado">Cargando titulares…</li>';
     try{
-      const r=await fetch("https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent(f.rss));
-      const j=await r.json(); if(j.status!=="ok") throw 0;
-      cacheTit[i]=j.items.map(it=>{
-        let t=it.title||"", fuente=it.author||"";
+      const lista=await traerRSS(f.rss);
+      cacheTit[i]=lista.map(it=>{
+        let t=it.title||"", fuente=it.fuente||"";
         const k=t.lastIndexOf(" - "); if(k>0){ fuente=fuente||t.slice(k+3); t=t.slice(0,k); }
-        return {t,fuente,link:it.link,fecha:new Date((it.pubDate||"").replace(" ","T")+"Z")};
-      }).filter(n=>Date.now()-n.fecha <= MAX_DIAS*86400000).sort((a,b)=>b.fecha-a.fecha);
+        return {t,fuente,link:it.link,fecha:it.fecha};
+      }).filter(n=>!isNaN(n.fecha) && Date.now()-n.fecha <= MAX_DIAS*86400000).sort((a,b)=>b.fecha-a.fecha);
     }catch(e){ ul.innerHTML='<li class="estado">No pudimos cargar los titulares en este momento. Probá de nuevo en un rato.</li>'; return; }
   }
   const items=cacheTit[i];
