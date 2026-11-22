@@ -614,7 +614,13 @@ async function cargarTitulares(i){
   if(!cacheTit[i]){
     ul.innerHTML='<li class="estado">Cargando titulares…</li>';
     try{
-      const lista=await traerRSS(f.rss);
+      let lista=null;
+      try{ // primero, el archivo que actualiza GitHub cada hora
+        const r=await fetch("titulares.json?t="+Date.now(),{cache:"no-store"});
+        if(r.ok){ const j=await r.json(); const l=(j.fuentes||{})[f.nombre];
+          if(l&&l.length) lista=l.map(x=>({...x,fecha:new Date(x.fecha)})); }
+      }catch(e){}
+      if(!lista) lista=await traerRSS(f.rss);
       cacheTit[i]=lista.map(it=>{
         let t=it.title||"", fuente=it.fuente||"";
         const k=t.lastIndexOf(" - "); if(k>0){ fuente=fuente||t.slice(k+3); t=t.slice(0,k); }
