@@ -457,7 +457,7 @@ const NOTICIAS_EJEMPLO = [
 // ----- TITULARES AUTOMÁTICOS -----
 // Se toman de Google Noticias. Podés cambiar las búsquedas o agregar pestañas.
 const TITULARES = [
-  { nombre:"Puerto Deseado", rss:"https://news.google.com/rss/search?q=%22Puerto+Deseado%22&hl=es-419&gl=AR&ceid=AR:es-419" },
+  { nombre:"Puerto Deseado", rss:"https://news.google.com/rss/search?q=%22Puerto+Deseado%22+when:3d&hl=es-419&gl=AR&ceid=AR:es-419" },
   { nombre:"Santa Cruz",     rss:"https://news.google.com/rss/search?q=%22Santa+Cruz%22+provincia+when:2d&hl=es-419&gl=AR&ceid=AR:es-419" },
   { nombre:"País",           rss:"https://news.google.com/rss?hl=es-419&gl=AR&ceid=AR:es-419" },
 ];
@@ -585,6 +585,7 @@ function hace(fecha){
   if(min<1440) return `hace ${Math.round(min/60)} h`;
   const d=Math.round(min/1440); return d===1?"ayer":`hace ${d} días`;
 }
+const MAX_DIAS = 3; // los titulares con más de 3 días no se muestran
 const cacheTit={};
 async function cargarTitulares(i){
   const ul=document.getElementById("titulares"), f=TITULARES[i];
@@ -598,7 +599,7 @@ async function cargarTitulares(i){
         let t=it.title||"", fuente=it.author||"";
         const k=t.lastIndexOf(" - "); if(k>0){ fuente=fuente||t.slice(k+3); t=t.slice(0,k); }
         return {t,fuente,link:it.link,fecha:new Date((it.pubDate||"").replace(" ","T")+"Z")};
-      }).sort((a,b)=>b.fecha-a.fecha);
+      }).filter(n=>Date.now()-n.fecha <= MAX_DIAS*86400000).sort((a,b)=>b.fecha-a.fecha);
     }catch(e){ ul.innerHTML='<li class="estado">No pudimos cargar los titulares en este momento. Probá de nuevo en un rato.</li>'; return; }
   }
   const items=cacheTit[i];
