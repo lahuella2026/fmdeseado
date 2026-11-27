@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27T02:10:00.042212+00:00",
+ "actualizado": "2026-11-27T10:49:36.239654+00:00",
  "fuentes": {
   "Puerto Deseado": [
    {
@@ -61,6 +61,12 @@
     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPT2dWSzFlb2QwbGdKMlJFWnZSSU14angtYlBWRTZyTEhhV0ZvZEdRVHBHdzNnU0p3MFl5SzJEUG05blNBejEwdUZlLTZodXQyRTgzWEhKZ2NvVnFzbXdONXJwM2Vhd2tmbHIwZjhkYTNkaTRIT09Oc2dkQnl0X19FZnpHT1BUaWlObWcxYnp6TmU1ZTJmT05sSHNkTmczNFpWZG5LWF8xM3FNRTNVMFQ3dnVFWHBES1Q0WG52OWxLNEx6elJUckp2aUlJcU9JMUcwQklTRUlKZGYwZ0hReEhMR2hXaW85ajBKUGhlU3czLXBkRWlwQlI2TG1MYWcxTjExaXdz?oc=5",
     "fuente": "Santa Cruz",
     "fecha": "2026-11-25T21:13:51+00:00"
+   },
+   {
+    "title": "María Eugenia Ortiz: \"Muchas familias quedan por debajo de la línea de pobreza y también de indigencia\" - La Vanguardia Noticias - Caleta Olivia",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPclNpLTNNa2JHbEVjNDItb0Yxcjg0SmtIVzZyMmRieUJqSXUwVVltalNpZHNxU2Vvc3c1RERpdW1iaVA5NE5PemFPcXFmNDRoeWd2MGlibUw3TC1qRFZCbHlhaUlqN2YxZTAwdmw4LVhyLU9DMTJkMk9lN1FFOHo4YVM5bjVkZW9ZdFZ5UWNnVkp2eldVZVZ6SUxkdFdqWGRaN1BJNDVFNmowY2hMNVRiejRuVE5JRWRuQ1RHdkxoNlV4eDUxeUZpYmxBUW1XZS1UOWVSZ19LT0pLWkc0dHFPNlJoR1RxVFU?oc=5",
+    "fuente": "La Vanguardia Noticias - Caleta Olivia",
+    "fecha": "2026-11-25T14:09:16+00:00"
    },
    {
     "title": "Puerto Deseado en expansión: inician las obras de reconstrucción del muelle para potenciar la operatividad pesquera - Pesca Chubut",
@@ -153,25 +159,37 @@
     "fecha": "2026-11-24T15:26:35+00:00"
    },
    {
+    "title": "Superluna en Santa Cruz: a qué hora y desde dónde verla este martes - Diario Nuevo Día",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWXVQLURHQ2s3SFFsdzJ6b0tSUEdweVo3M3RYcDBURG9PbWdwVmI2S2w4MFFHeVhvLUNoWmhPaTlaeEpsUWFvSFR3UDZBRjRYUkU3NnpfQU1fR29UUGFpbWpqRElYVXJaN08tQ1paMk1KUmlncUd2MTJtbFdxY3JsWmRKdUotWDJKSGw1TVZhcTN0RnZJQVVsUUp6X1ZvUjAtSEp2dWJ2TWpPbWhKUUJ0ZmdKeW5sbTg?oc=5",
+    "fuente": "Diario Nuevo Día",
+    "fecha": "2026-11-24T11:16:16+00:00"
+   },
+   {
     "title": "Buscaban un celular y encontraron armas y cocaína en Santa Cruz - Diario Nuevo Día",
     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbkR4a3JMVl84VjNJTmxJSDJmMnMwY210bTdjRnFVNkdEenczdDJvSTRMdUFBaHZXdklINzNkRjg0WDJkSDIxeFhqbGg3LTZGOUpVM0dOeE1BSFBrbnhCQnJ3VjdRWmpzd18tcEJDWE5JZkNxNGs5NXZZbDF5X0lJUXBGVEQ4d3hTaldTck1mZmNnSkdBMElnZTh1QTAzNVRvYmhxYUEwa0J2OGF3?oc=5",
     "fuente": "Diario Nuevo Día",
     "fecha": "2026-11-24T11:01:16+00:00"
-   },
-   {
-    "title": "DDI de Puerto Deseado realizó controles preventivos en el puerto - Tiempo Sur",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQkp3UkZuRkVIMm9ZMi00TmhWSUFteldvZ1RuV0tjYjNHY1ZYMUwyb2lwdUx6SjBTR2JRQ1I5RnZSbHJmbXhqd1VZT3hLN3VNUXJ2UFpXNTNXY04yZGVfeTE2a0ZNOUJ6VF93QzBuWkw3MlFhckE3cHctY2MwUzZsLUY4T1ZKZkpkMlZNZ1oxLU05bnQzWHgtR1BDaUFvSFHSAawBQVVfeXFMTjZKSUF0bUROSG5IT2YyNXAweG9qc1VHZC1jcW9oMTJGMlB4SVR2cHIwbG4teUZiYUJ3VUpXLVc0cUI2aTBmU1UxNEtJWlBCNVp3YWdVZ2wtTzczZWFiTlRUQy1xZnhFUy01ejR5dFIxcl9uVnFPNjhDNHQtUFNZejRKMzUzQ1Z0YTF5bU9MQVZSMjhvUTJBQV9PLTVUbEVpVFNoOFl6ampFbUxUUA?oc=5",
-    "fuente": "Tiempo Sur",
-    "fecha": "2026-11-24T10:38:00+00:00"
-   },
-   {
-    "title": "Puerto Deseado instaló cámaras para mostrar al mundo la colonia de pingüinos de penacho amarillo - Winfo Santa Cruz",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTFJVNWxuYWRHUkJpWWlWbWdBZWdTbm0yUTJvZWxKbHZkNTdFekNsanl6X29OUE41ZDR4Wm1JSHdqOTVia01kNGxzVFdMejM3SVp4R2lyejQtVndxb1RfZVFSSnBOdUVjXzZ4aTE1bjE1UFJOMEJaSDd4YkJEVDN0Q2YyUV9PVUhUN05sSElwS1luQnA3UDN1ckl3UmdIdU1YMi1JMllfRHNJbG5fbXFmeVZrQ2xCaXdQZlBVRWRyQmVST3ZtUFJYcWNB?oc=5",
-    "fuente": "Winfo Santa Cruz",
-    "fecha": "2026-11-24T09:54:57+00:00"
    }
   ],
   "Santa Cruz": [
+   {
+    "title": "La prórroga de la emergencia económica de Santa Cruz se define el 10 de diciembre - Señal Calafate",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMm9lWDRKY09VcFhoanMzdnVhQ2h1XzIyS09pRy1WUjhIQ2ZuVWV5cE15bktuMGRXcVZNeGI3X0g2d09NaDM5NTBmejg5TnFtOXljbndCNy1pLWpfQ2Zua2ozZmtIeVNMb1I1SFpWR1VaeHZBa2cwV2RpY3poM0g1aUFUeVVTTnY1MkhBQmhmRDFUX0tpR1VHRTBiX2hrcGJrNGV0NFhOSE43RHlZYUxRMlBmNTEzeUhrZVByZnYzMlc5UTdLZVBrbA?oc=5",
+    "fuente": "Señal Calafate",
+    "fecha": "2026-11-27T03:08:00+00:00"
+   },
+   {
+    "title": "\"Estos acontecimientos juntan gente, unen los corazones y le hacen muy bien a la familia\": Pilchas Gauchas transmitirá nuevas jineteadas en Santa Cruz - Diario Nuevo Día",
+    "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPbkhfWGxpelJCNFJFcURHODZrTER6akY1ZGVmREdGd1NjR3VUX3FUSDhRaWRhYWJYWGtfb2FwZl9XSGsxb3oxLXZ4U1VkTGItUHdmaTBUanN0RUJwYldkVnY4bDd5Rm5scDR1Z2FCYlA5djI5NzJNOFRTWnVjOElYR2ZzY252NlRncTczWWw2TXEyRlY5QmJ4OHNreVM5ZExIcnJWejJZbFhPc2d2bXJ1Y0NaRlpacWRTVHhFQW9aeU0zSEpvUVE5S1FhREJvOEVSNHhrb20wT0ZnaV93ajRERVMyRHIyVVdQanRlLWdBellZQk5Sd1pYWlZYVl9kczlacUtQNGc5RWMzQ203VUFfOVotV2FLaXFmWXo3SUVBd2JSdw?oc=5",
+    "fuente": "Diario Nuevo Día",
+    "fecha": "2026-11-27T02:57:44+00:00"
+   },
+   {
+    "title": "Santa Cruz sancionó su nuevo Código Electoral y abrió una disputa por las PASO - ADNSUR",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQenFpVnFSM2FQRW5CUlZBN2lJRWczVkJkMlFITzZtZThLQkQ4QzlxaTN0QldVUzFOZVQ2TzljN2JJc2h0bWNGQ25fOTQ5SVhncXZJRk9BS2FrbDFwUHFpb3NTV0NoY3pDSkZGYldkalUxLVpvU1B3QXhZdGkxb09LcEY3WmJVa2ZzczJoakZkaVpSdzhXeG9nbG9ueEpQYXljcGREdzB5QjctQ1FCLWl5Y19RaFRGMFI4bjViUWN3RXdaZWFxcnFrVFNMZjlIcmVEWTBJX0Jn?oc=5",
+    "fuente": "ADNSUR",
+    "fecha": "2026-11-27T02:09:00+00:00"
+   },
    {
     "title": "Santa Cruz aprobó el nuevo Código Electoral con boleta única, PASO y ficha limpia - patagonianexo",
     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM0htSlFSSGRkVklodkcyb1Q3VVg1bWMxSHRuX2RPeUtQOEdiaEl3VFZ3czBEdnZweHNoa3d5OEhGWVF3Y2ZMSzZkVGJIX25naDVrY0FrWVZmNzg2bDYxem9fQ0lyaVhEREw3eHc3ODVIc2ptRWdDZVlVUVh3RXZja2FZa1VxTUY2T1huU3o4T0U3QWtPa1NOSHVmajgyTUpINS1QeGRsWWkySmJaeXJIdEhELUkyTVFaVm9nTXBmOWxEcFE?oc=5",
@@ -209,6 +227,12 @@
     "fecha": "2026-11-27T00:26:14+00:00"
    },
    {
+    "title": "Leguizamón firmó un convenio con la Universidad Favaloro para las prácticas de medicina en Santa Cruz - Winfo Santa Cruz",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbjRkZm5zOTVCM3E3SWpjNzgtcDlzd2hyQWxHRjBkZXhSU1h4Z2lReWljelFJTWFsalNhM2ZnN1BKb0p3WS03MWx3ZGhRYUFVa2JLbmg5WEtVbWEyWlp1NktQSFFZbnJGdWd2X1FnUE50R19oR1R3RjFOcGZ1Mk9jUE9NSTVzSzNJRVJzRUh5Z3hyQ1pqNmhGbnBOQi1oQk43SEIwVGFwR2JDV21iQ09KVUlfMEVQQ0UxTVlBOVJJMzAtVHIxN2JlLWc5SlhIXzZhWDdJ?oc=5",
+    "fuente": "Winfo Santa Cruz",
+    "fecha": "2026-11-27T00:24:06+00:00"
+   },
+   {
     "title": "Jorge Brito destacó el potencial de Santa Cruz y coincidió con la visión productiva de Vidal - Santa Cruz",
     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaTlFZ3VaWDFsdTAxNmVaS1hUS1BlaTFyRG5XY2Rlb3VhdmhIMTA3VFdZNm9LXzNzd3REU2V5b3RWMnBqRFVwQzNtajMyQl9xWDhxS3BIN1ZQX1kyclgzeF80amUyNVdOV3A3UWZZYXhlemdBMnV1RXkyakctNGJDb2YzcjVwTFpCdTdVNW13emtoenliR3NxWFNQRjUtb0VkZ3JzWk1QWXhVVnpVbm1oTGs1ZlpYQkt2Q2FIZXM0VDF5Tk4tbkhOY3VJTlktUFRvWVpmTGlsVEJPenZ2VnlRUjdPcw?oc=5",
     "fuente": "Santa Cruz",
@@ -219,6 +243,18 @@
     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcDVzUFhCZEtkbmdISElLZ1NZUktqN2tvQTBtRnhZVFRYNUw4XzVuQlhxZ0xjYXI5XzFva0w5bTdOc1ItMWt3UExOTVY4bGdFT1VWRnFwa1pMTTFoSG1NR1hTc2xncXU3MGdFdjhMd3BOMXlWME9qLWdoc1UwVEstTldYQXVWWmptTjl0WnpOb25haXVXOVdLNFdaNm1YRlNMMTVOWU45N0M5SXFiMnZ0emd5ck9ZMG1WTW1CZVdEQm4zUnNxMEZaNEZjM1F1d2c?oc=5",
     "fuente": "Santa Cruz",
     "fecha": "2026-11-27T00:19:28+00:00"
+   },
+   {
+    "title": "Faltazo del Vicegobernador a la sesión de Diputados - Tiempo Sur",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONjA3Z0syejhKTE1ZRS1PWFNoNDNjR3BHaWEzbkFiU0VuVEFzMzVseVA1MmdHdkNRTmJsc2lITTZfc3ZzX0paV2xHTkZxWWZpU0lCa09mOFBNRXplcmlKSVlwa2ktd05iRDhBaDJVQUU0OTQ4WTlHYlVFdi1RdUVVWlRDck56VldhTmhWZllLWDIyRlXSAZgBQVVfeXFMT3NJQlJyc3V4SVVMeU5qRl9RRFAzaFk2cXV0bzNHcVF3Rkt0c0RzNUw1NjlyMXNwaEE1OW1rZVhxWVZVUl9fdjFoTk9sSDNGcUV1Rkx2MDRUTHE1TWJONERkSXFaNmJBOU9VZmdudkpSb1JOY0oybzl2YW1pRVFBQmptTWZ4dkUwUHFMbGt1UFJyVUVrMnFwU1Y?oc=5",
+    "fuente": "Tiempo Sur",
+    "fecha": "2026-11-27T00:14:00+00:00"
+   },
+   {
+    "title": "Chubut aprobó una ley para que médicos de Santa Cruz y Río Negro atiendan en hospitales públicos de la provincia - Diario Crónica",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPRHJkT1ctOEJxQVpUWGdzQ3lOMFU3Z1liMDBmc042RWh3RnhPeUNUX195YWZwQ1RueHRBVEVPcmNmYVIzcUY5YTRwanVUd291M3R4THlicDFyYkVlaHhnWGVTMXRXNGxkT0pvVFE5czRGQUhWYTJYWm4zd19KaVJvOHp3NkdJNjdJWmh3OWtPdWlSajY5RGZ4Ri0xaVoyb1hTVy15eEtxWXdUWFVKNjJQSmpWd1ZuajRBbkdQU2s1Q0tnR3VNU2d5VjBZUjY5QzRKUUxxX1lTUUM2R1MwbmNBRVVibHJSWWJRMkUwTlJReE1PcGdnLUU5cHpzNXhjRzJfcEHSAYcCQVVfeXFMTkFyX0Q1TXZJa291dVBKMm9rXy1GNXJWZlVqQmZxdkVodk5qVWRubkRYbUVFWEp5Rm5FZ2l4d19PMGJ6UHhETWg2R0M3MGk4azEzTnJXNU1wWG5DaF82UW9JR3VZMkZZY09PckRtZkxJVU16TVJMZkFpbUo0dGZEODQzaDYzOFJlb3F0Y09nZTNramFXWFpOSVJYYUYyXzRUZlB2T0lWeXNXTC1senh1b2dPMDVVampVbXRWaU5maHlKLUp4LWNRTk9xbEI5S1l0U3J3YXowcWRrZTlTYTJXbUlPNU50a0M0SzdXRll3Qk5VZENuRnBzekVvWUJFdEVXS1lIaHg4LTA?oc=5",
+    "fuente": "Diario Crónica",
+    "fecha": "2026-11-27T00:10:15+00:00"
    },
    {
     "title": "Santa Cruz aprobó nueva Ley Electoral y con PASO - Tiempo Sur",
@@ -233,10 +269,16 @@
     "fecha": "2026-11-26T23:17:00+00:00"
    },
    {
+    "title": "Parsons: “Hoy nuestros emprendedores pueden desarrollar sus sueños” - Tiempo Sur",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPemI1bjdrTkhUNThqaVFvSTJ3d251TUZIc2h4TkZscVdEQ04tSHlHVjY3RXNLX2h6MV9XYXJZbUNVMzJia1N6ekFFcGRXdjJscU4zMHQ5c1d6Y2RrS2wySVZCbXBTa2hxT2ZGZzVHRVFiR1RrWEJxZTlITWhIWEV2NUJPS0NVNEZVRHNSUHdmeTk4Yko2dldFRXlkeDAyMno5U2dPcdIBqgFBVV95cUxPbk1QbU0zcThKdHNtbGRmc1N2bDd1TnoyVEx6OFZrWkl2V3FBN1JNM0VlOUNGb2dhamktSmdJMnpRWkh4RXhLQklJMEtlVFJGOGFScXk1bXdsTDd3OXRvcllvb0Y5eVB0cDlScUtoUFZfVDJQX1VHZTliZmREYTM5TFNnWmVYLU9oNjVta2pOdF80N3dSNUdjQkxMX0J5ME9NVThPSm9WOENvdw?oc=5",
+    "fuente": "Tiempo Sur",
+    "fecha": "2026-11-26T23:09:00+00:00"
+   },
+   {
     "title": "Santa Cruz aprobó su nuevo Código Electoral con PASO, Boleta Única y Ficha Limpia - Señal Calafate",
     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU2trbmVacEY1Vl85Z0JRLWhpZkhIZUI0bGtZMGxIbmtuU0FuTWdZRzJEVm5yNDVpZHpXUlExMndha0Z2WWNIdFdJdlJoTEN6dG5oS3M5OUl2UjFRdnI3eDE4c3htUllVbnJtSEU0VW1Sb1hxVWlJNVZtODlVYkxDb3NFMzdvSTlGWkpLbV9VcWVRWXBOMzRkT0RmQlpyWmpSbWFydHJraTFFT0w5Zkt5dzhBYldwTld1TVRVZnE1elFGdkloalBZMg?oc=5",
     "fuente": "Señal Calafate",
-    "fecha": "2026-11-26T23:13:00+00:00"
+    "fecha": "2026-11-26T23:04:00+00:00"
    },
    {
     "title": "Retirados cumplen seis meses de acampe y reclaman una respuesta salarial - Tiempo Sur",
@@ -263,12 +305,6 @@
     "fecha": "2026-11-26T23:00:00+00:00"
    },
    {
-    "title": "Bomberos realizaron varias intervenciones preventivas por las fuertes ráfagas de viento en Santa Cruz - Diario Nuevo Día",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPNHNrUUluaGFPMkw5OFg1clJVekRCcmM0U2lWaDRLMXBUd3o2YW9xaFhpWjRRYVhVU08zRWNlTWlsN1B0LXl5OTdGX3lFQU1kTzdfcHFhd2ktTmo1ZmsxQnV4UFA3aEJwNjUzV19mc1d3TjRRSS1SLUhQYWFleGRfS1NHNTd1b3JZSlNmM184bjh0b3J3VWN6WjR0aEFxbmxST0ZfWmxLaUROZFY5SW03cXlYTjRHUXBrNkxIMjRWUGlHb0VmRURGckZTVVhWRmlIQU1PZHVFY3FvY3R1bVI5YjI2Mk9nUQ?oc=5",
-    "fuente": "Diario Nuevo Día",
-    "fecha": "2026-11-26T22:41:35+00:00"
-   },
-   {
     "title": "La Escuela Primaria Provincial Rural N° 26 de Las Vegas realizó su muestra pedagógica de cierre de año - Santa Cruz",
     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPM0R1MHFqekdpOG5MaFZRa2FPRjZoek5yWTRkUjJ4LTljZ00yRlhkMS1lUjNpdXRkTUN6MkIyTkE3U1dPWnkyMXNFOV95aHZLNVY3Q2hEQm1sLUctcjJMLVhXUzlnbkhZMXpnRHhTNndPeDhrYXFROVNlX2JkQ0dya2ZsMDU0VUdRZEw4M0RmVUdhMGtrUm45Qjdfa09ReDd3a3QzaHVoaVVoUDVoQmtta0M0ZXFTa01xM2gyUFh1ZnFxV1Q0TmJVcmJkVXVMWUxHd0Fid2l2anZoejNaODVLSU56V19OQ1IwUzhxYg?oc=5",
     "fuente": "Santa Cruz",
@@ -279,12 +315,6 @@
     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZDc1T1c4b0ZkdEdrZzBNRkNjNUpVTkZNY3NabXlaUFRXX0lTLXVkSU42NG1XMVIxdTV3U3BVTTNqdWRwZ2trb0R1dUxZMElUWVFiamtGX0p0SFAySWN5UU05ZDFYZkVyenlEblpOQWhuMUNUcE8zQUVMLWZ1Tm5uTlZhdC1iMHo1MC11OGl5dV80SzJsall2dmhOdmQ0bmtneExjM1FJVE14Q0N5UGlwWXZNS0ZIYmdMZlNKbdIBwgFBVV95cUxPMURyaFk0WGFUQUJHX1gxdHNURnJFdVJjY2tLcVpEall1UklXc2FkNjg1emFJM2ZYbzk3S0w2bEhHWWVra1hFWE9zakQtcWN5Yl9meV9vaGVzNUEtREFQRGxVcnZvX0E1NTF3ZW9zOFk3bEwwMTRYQWpzNnpBaVljRHpBV0lleTZRQXZiaDFUSnVFbXhmT3VrenJLZTRURC14eXg5RnR1R21fZjgxMVhTQ1pMTVFJR1ZmODFuVDg4U2pqUQ?oc=5",
     "fuente": "Tiempo Sur",
     "fecha": "2026-11-26T22:41:00+00:00"
-   },
-   {
-    "title": "SALUD: FORTALECE LA ARTICULACION OPERATIVA DEL HOSPITAL DISTRITAL DE RÍO TURBIO - Santa Cruz",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWENVQ2dwWjdiTDE3VERESEljTVVRSlBZWGQyMDRfQi1xaWhfQmdfZFlLZjdHY3BuNTVaUHlCaWJ0NWppLU1TMzdoY1BkNlFBZHV5T3BKOW1NQmxwUFZoVHdnNUZOV2ZMcHZKQkhiS01MMThNc3FxSkgwNWFxOUl4RVR3d3dMd1kzT19LUkllNkdFR3liX2FDM0d1SUk1dzUzS3FLd3hkQU5SekFEOGI0WmU1VE52NlBTVlBHSHhsWktxekFTUC1BUg?oc=5",
-    "fuente": "Santa Cruz",
-    "fecha": "2026-11-26T22:30:00+00:00"
    },
    {
     "title": "Ricci: “Esto es una gran oportunidad para todas las personas que deciden emprender” - Santa Cruz",
@@ -317,96 +347,126 @@
     "fecha": "2026-11-26T22:04:25+00:00"
    },
    {
-    "title": "Elmiger: “Apostamos a que estas propuestas crezcan y se federalicen en Santa Cruz” - Santa Cruz",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWVVBNld6Vy1OdFRMU05QNENkQnBGVzdjU2hoM3p1WmpXNXpTNndiNkxSQlBNa0F6aXgzZ1JYSGRRMGJpU045dmNQeVJ3U2NibDVoa2d4algxSVlPc2dUU2ZtdmdCQ09TWjhmM21PS25ud0VWTXhvQVJDdDZXanJJOGhQU2syRlUxOHpQd0hsM2J2QXhuXy1YcGR2UTl1bms5anQyVVg1OHpYNm1nLWNoY0RsSnNHZjZHS09ScmlZR3JTVWVKZ3dZeWNhQ2FubmduZ3c?oc=5",
-    "fuente": "Santa Cruz",
-    "fecha": "2026-11-26T22:04:15+00:00"
-   },
-   {
     "title": "Marcelo Rucci respaldó a los petroleros de Santa Cruz y pidió que vuelvan al trabajo quienes perdieron el empleo - eolomedia",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOQl9SaUd4UTJUUDdRd3MyclZxS1R2eDI2RTBsOEJobVZhWklya3BOZFFPWGU2ejhzbW9MVUluTVlwbjdRWm14QzRjYlF6TG5RSFB4Yk1wRGNRbktzMEJKZVZlNkxROF9wdXdQNmIya09wbTlRSS1BTDZwMjNQNXU0X3hNMGV2UWFXYjVPaFZkem96dnc4aEx2VEN1TlVvTEtpVTl1ZkI1ZXZNWFpmUnVhTDA5UDZPRVV1bWYwTUNZa2JpSWxIbXp6VTZjQkIwUWY4LXdVVA?oc=5",
     "fuente": "eolomedia",
     "fecha": "2026-11-26T21:43:34+00:00"
-   },
-   {
-    "title": "Senado aprobó la reforma electoral con apoyo de dos senadores de Santa Cruz - Tiempo Sur",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTTNjVmhVNjZTdGxVTWhQSmN1U3gtcjA0SVJrekQtVEl5V1pvcWRhQ0VVcTVfSGJUY3N5eVk4OTJ0Ym5XUTJiQW9uVUVOdEZnSXJ6QlJEdzljMUt2UHdTWGU2d1dDYVRBN0hKQnVCejExa0htWnB2alhlTWlXcExhdWNWTXNBMTRVUjZXMXhXUmVCbENLVUtLRFFIWG9oY3lNbGtMR1Q5QjA2YjhuT2ZOQXNUbG1lQ03SAbwBQVVfeXFMT3pjSDYyNjJCMWxhY3p4ZVJrckpmYk91WUlUcFUycTFZVmYxQTVzUHJrVFpjRXMyeG91TDB1T0owYy1tWVF6akVjZUNpQVFzcFJxdVZoZE1lQ29Cb0o1d3g2enVuTTB2cElCVTN0eVViWTduLUhEdU5remM0MmNyeE8tSUF0b1FTaXJtZHAxS2xRRWRwME5hQ19EZlFOWHdwUFhzWldUZGVNU0hNVXg2RXhRMzJDYWc4SGNNdzc?oc=5",
-    "fuente": "Tiempo Sur",
-    "fecha": "2026-11-26T21:40:00+00:00"
-   },
-   {
-    "title": "Rucci acompañó los reclamos petroleros en Santa Cruz y pidió recuperar los empleos perdidos - Alerta Digital",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTTRETHlNSnd1VS00M1Q4MzhCWjVEaTgySXRSQXg4Z0lBdmRJLTBST3dXaHBaMjdkRjBidmFkUjlhcERQNFROQ3drTnNOMVBqR2pkam16YW9EMTk1R282WnptVEtwbWtrd2UxWW5lQXMtVDU4TUNFQzBTci1WbDlvRDJIektDeGM2RWN5a0dsalI5VTNVNDhNRFFiVzFvRDk1cm1RVXI2a0pleGRiTl9JbnRmbHBpYS1NNFhaY2tEYTItbG1vZHFQNTI2YUVuV0JEVGtWZ1JmdkdoR0swUDRmdTNuU0hjZ9IB5gFBVV95cUxPTTRETHlNSnd1VS00M1Q4MzhCWjVEaTgySXRSQXg4Z0lBdmRJLTBST3dXaHBaMjdkRjBidmFkUjlhcERQNFROQ3drTnNOMVBqR2pkam16YW9EMTk1R282WnptVEtwbWtrd2UxWW5lQXMtVDU4TUNFQzBTci1WbDlvRDJIektDeGM2RWN5a0dsalI5VTNVNDhNRFFiVzFvRDk1cm1RVXI2a0pleGRiTl9JbnRmbHBpYS1NNFhaY2tEYTItbG1vZHFQNTI2YUVuV0JEVGtWZ1JmdkdoR0swUDRmdTNuU0hjZw?oc=5",
-    "fuente": "Alerta Digital",
-    "fecha": "2026-11-26T21:37:41+00:00"
-   },
-   {
-    "title": "Darío Menna y Claudio Vidal retomaron el diálogo para destrabar el conflicto municipal - diarioelcondor.com.ar",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOT2gtUktqWHhkdV9sd1l2azduZnk1MmRPbGNyY2RJRGFZZnI4LXRiOEExdU9jS19ReUZrVlROX3FsVU5oTnJ6WWhnUVBxbE1rVHpnYUQzSU50X1V6a2lLQ1pFWDlVcWRvaWVVNEt5QkNiTVpHbnpTbjk5VnU1NEZ6MFR5VEFhWUloeE9ieS1pbG5GTEJ0b1NLSG9EOTV2SjZLSGQzQUV0VVMtZzRMRlN3U2x2ZVlPNjdmLVM4U0JDSnBhSGRo?oc=5",
-    "fuente": "diarioelcondor.com.ar",
-    "fecha": "2026-11-26T21:32:00+00:00"
-   },
-   {
-    "title": "Parsons: “Hoy nuestros emprendedores pueden desarrollar sus sueños” - Santa Cruz",
-    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPcERMeWc5TzZMRHR0UjNRZTNYQkFoYUVGQWNlSHVjSWRsV1NlU2hJMVFydk5UTnFDektua1NYOTBFeUpya3ZUTGNtczJLMnFxZDR4M3FybFduRVlzT2lzemJVYzZ1YmxmSEE1YWhERWlQN3B2dmZSUXBCeTg5czh2VFZzXzZjWXl1S1NDbXI3ZHBKaExjSXdmN3hDcDBpY1I4d2NmTEpMcHdnOEg4TkRIY0pFbS1uVS1oQXJUdkJ3MmlCR2ZGTXdFZFZWdWdMdkNkSkY5N21ubW95UTA?oc=5",
-    "fuente": "Santa Cruz",
-    "fecha": "2026-11-26T21:25:00+00:00"
    }
   ],
   "País": [
    {
-    "title": "Javier Milei y sus medidas, EN VIVO: el Presidente se reunió con su par de Asunción y el Senado le dio media sanción a la suspensión de las PASO - La Nación",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNMVdUa1RTOUIyRmV4VHdKRnVOVFRCTlRfWnZySGY1UVBfY25SZmJZZnczZXpRXzJVWUpBZGp4enFHWmJnUWFURGtmUlBLSnNKWnlOUnpFbWpZZWRHX0lHNmxoc0NLMDJKcGdJS19MTklrVFBIYjRoS05ScU9haXctSGlTVHVWZVZkS2Fmb0QzMDVheG1YTHN5Ni1xLUNTTnZwNGpiNFdmeE9MbTBGaDVzLWh1dGYwUU5vX2FZMFpKXzBXR1RlV3JoaFF0TW1hQ3hpaXJrY2hoMG9DLXh5ZWlYOGRvSQ?oc=5",
+    "title": "De aferrarse a un peluche a jugar sin parar con otros monos: así está hoy Punch, el macaco que conmovió al mundo - La Nación",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQX3NrV3I5THhwWHdUMUJsSGJETzBocXQ5TGR2Tl85ZWszWlRTalRLZ2lSemctSjFYZFRoRUwxbFhlNHRISnlqSzBVX2w2dnc4bHNockxtT1F4T3lqRjdVeFp2ZG9QT1FyT2IycVU3ajdnZkduWlhXVHNVQmNhZVJNbHQ2cGdvc3dNZFE2dHhPbXg5UEI4QmdnUlhRZUMyRW5VYS1lZ1o4ajlmZUJYMjlXUGoxNkJIYWxidVE1V3F2X2ZxbTN0Q09SVmdnRDNKbEZCR0hKZlBnYkxKWGs?oc=5",
     "fuente": "La Nación",
-    "fecha": "2026-11-27T02:03:00+00:00"
+    "fecha": "2026-11-27T09:15:00+00:00"
    },
    {
-    "title": "Pedro Sánchez recupera terreno en un debate donde la izquierdista Ada Colau fue la revelación - La Nación",
+    "title": "Nora Colosimo apuntó sin filtro contra la China Suárez: “Me parece nefasto todo lo que hace esa mujer” - La Nación",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNUm9zejloU2VSZFI4ejh2am10OTVmZ0ZsdG9nWFNVdnN4UGwwc0ZiR01wZ2ROeTNUblZRM3RvS0JSclVNXzdVTzA0M3ZIbEcxX3pfYU11RVo1Y21fQ3VoZnJhZVRxdTZxTDlJWXMzMklhWmlwTDNXVTFLSU5hbHlMS3ZKVmxTYTFwbWhNUGZwZVBQdDNXam9rbHhjMld6eHVPY2RBQ3RNaEdtYlU4a3JNUW11Mmg2ak0xTDhVSkVkZk52V3pRdVBHU05MT0xSUHJUMmYwdmFPUlE5WXFOR1ltcmxWdWNoM1A0?oc=5",
+    "fuente": "La Nación",
+    "fecha": "2026-11-27T09:14:00+00:00"
+   },
+   {
+    "title": "GTA 6 ya cuenta con su Primer Port no oficial para PC con Launcher y Soporte para Teclado y Mouse – Descarga, Benchmarks y Videos - PC Master Race Latinoamérica",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE90aGZ0eVhwU3NQemdxVlJydlpjaVNZbHBwb3pFdzNtSjZVNll6bGg5M1VKZ3dlbksyWkN1RF92TF9OeHpGT0xhMEFGbHZPMGl3czVKc18zOTNUNmoyM21tcHcxTjdad2dfdWc?oc=5",
+    "fuente": "PC Master Race Latinoamérica",
+    "fecha": "2026-11-27T09:07:36+00:00"
+   },
+   {
+    "title": "Efecto reforma electoral: la suspensión de las PASO divide la estrategia de los “outsiders” - Infobae",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxON0Y1QjNfaEVWdXF5UnFtUnYtLWZKdGRfbkxLTG1vcFcta0Eya0U2OEQzVjlBSVZ6clN2NVlqOU81MkhPbjJ6dUp2S1Q3bENmSXh6eFY3bVM4RTg1Zy1ydnFMaWlfSEdwYXg0Wk42cF9pZXMzSmVUVV96T19JeEU3RWtyaTJyYVlORGxIX0pKQkRKYjRVTTdZajZZQlNTbXIzOUVYSVhxMWJzVVRkVzhhZjE4TnA1ZVlLcDQ5TzZ0enNhQ1J5UF93aFJtT1VjUdIB6AFBVV95cUxOOUlUWFJobXJnSWdGT0s0R0stVVVkbGV1WlBLY1dfQi1zSFB5VHNGd3pfN0ZRTmpLM3pXYVZ3ZmF4U3hZNkZhcTE2X0ZpV3Nya0ZHcHBvaUI1b3JRTXhLZjFnbklCRVJmaExNc1VmYnRuUDUweENsdTF3dnZIZkFaM2EtM3FTU0g2TGlJS012dFF4OU95Z05qeHNiUDdLdEtRR2lqa2RHNWZyOXFaRW9DZzRZaHl2c3pZS2RtV0pvX25scE9wNkFka0twMjROTzZvWllQbWpWN3hYRmRuNGROei1SSTlmYWxl?oc=5",
+    "fuente": "Infobae",
+    "fecha": "2026-11-27T07:16:00+00:00"
+   },
+   {
+    "title": "El Senado aprobó la ley de Ludopatía, tras un fuerte reclamo de la Iglesia - La Nación",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWHI3d3MxUjFyTkN0S0s0SHhDUWlmRDFCSldHQmNCQ0tRR21HU2VSNk83WnB3RkVqb1Vpc19hRGJLbGN2X2xUXzVvdl9jdGNxV0dtcUQ4OFB4ZDIwaGp5OUVTeE1BdG9UdW5UZHNxd2ZlVmx2Vnl3cTFlQVJZRk91M0NSS0NXcFVhdzc1MEJITGdLdlJWZ1NLckprdU43ZUtzTnQ4azhCX3hZdVlXZU9leDNBZTR1bkxVUkUzY3Y4Zmd4Q3EzYVhmY05XNjJhdzZzOWtB?oc=5",
+    "fuente": "La Nación",
+    "fecha": "2026-11-27T06:05:00+00:00"
+   },
+   {
+    "title": "Qué es el síndrome de fragilidad a partir de los 55 años, según un geriatra: “La diferencia entre correr al viejo que llevamos dentro o dejarse abatir” - Infobae",
+    "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOM0FrVTZmSS1EYWo3TTdnWkVSbkdOQWNwY19EazYtenhwWmdQTWVFNVlvSEhtQ19fWEw2MklTRVVaMlRLLXRLUENoYUp0R2VYMTEwbHhiSzBrSWtCMjNHMEZGdHhMUGdvOFVVbHJVaWhWRXNkTTBhbWxKNTNFeGtNVEtrZktwVUhMaWdkM1FLdHBuVmJOa3N2YklJeGFYR1E1dmlBTWpMTDY1QmswQk1hWHhXR0M4TXpIdVgwWnpsQTIyOU5SWDYxTXMxbE5mM2dTSmJyQ1BYT0xQX29sSkpHQUJfTXpkM0phQUxpdnliZjJjWTNwREpITUZZVXQtM2ltSms4bXFHYjh1c3JKVVhhRG5UZEF5a0JObjFQRWxEdDJZX1XSAb4CQVVfeXFMT181S2hYMUlaejRBbTZRWWVlSWFmaGo1Y3lCWW9UVi1ob1cwbmV4d2VNYkdlQ0NHWUVaa2VZQTN0STZuRHU0UmpTWmU3ZTh3Qmg1ZVpMa1VhVlR5dE5VUnFYMmhlYS00Y0ctVzU1bmhhaURkTTBoelZtX2xaeUttczhzWXZaZkJNN2pRN2xTTVZDWEdBekhDZ1U1UVZXT1djM3FET3RmT0ZvUEFCS3E0dC12aHN5VTdWZmx0ZVIyalR4UTZGUlFUTXpmZXJLTUZKOVRzT1pHdTR1YUVBWVQ2MDhkNnM3UzFoRGtuQ0NzUXRHMjJINlE3bWlYYTczS2ZVYVF0ZjVsVnQwWjNlNkNTVmFGRV9uUUpmQUdMZFM3UzYzVDlqeXN5el9iMjFmZHlkSzFYZnlXTjJvd1RnMzRR?oc=5",
+    "fuente": "Infobae",
+    "fecha": "2026-11-27T05:00:00+00:00"
+   },
+   {
+    "title": "Germán Martitegui se emocionó con el plato de una famosa en MasterChef y lanzó una advertencia al resto: \"Tengan cuidado\" - Infobae",
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOWF9peEszRE05dlBISDQxRVVFZWE3SkNJR3Bnd1p5VjJmY2xhOWJoTVJFOGRqMkhlcS14T0JPMnk5SEx2TThGN1YyQl9LQ3hKZXA0eGtLOTNCb2N6MDVNZGF4d25LYnk1blZpS3k3OWVUYzNyc0szUDN5alFzR1N5MnpmaWIwQnRNMnhrUUkwS3NERml3bThtb1AzUG5oSTRCUDhVcFpycGJ4YWZ3Q0hCUnpVWW8xekktOGdHVFRWYWoyclRQUVVaRnJXaWd6cTQzcE0wRDhSS3p2MzgzZXVkc1hnVVNlRTZ2MXZ1M1RjRkRXSkgxLWfSAZACQVVfeXFMT25kWkV1UGpiVDh4MXVpbXZtZ1dxQl90UDNEV2Nzek4wLU1nYTZoaGFmZTNxcjN3VG5Lb2dMbjdaNFI4eEduS04yMEdXVS1fMnZwMkxQOGdRdGpBSlM4YVZoQklGUmJncW9JdnM1ZWJ2dUJJYVpDS2VVZFRZUHMzRXZHR2p6aHFROHU0VGh1ZWlpRXVuSklsOENfSmdZTEVYUVZGUDNJb01CTmc3cTNWWHYxOXcwV2hpMGpwWVpScUU0alpPUUg5OS1yQXAzbWJfT3F5TlYyeFM3eEswSHJNanBFOXNOM2JOZ1lRTE1SbmdBaU0wMjFCVWRsNUt4bUhxRTFsSXhNX0d0SEV5Qk1zMUQ?oc=5",
+    "fuente": "Infobae",
+    "fecha": "2026-11-27T04:01:00+00:00"
+   },
+   {
+    "title": "Argentina venció ampliamente a Bahamas y se acercó al Mundial 2027 - ESPN Argentina",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTk44RjJEekZCV05vUGdkRFhWaE1lZnp5MEE5bHg4VWppZ3B3UDU2SWhYTFhDNS14eXl5WGZfNHFrZWhlU0ZCeENWSVBJc1NianNDYkE1b2VQNkcwLXpIQzIyd2NwdmpsemNodTduMVpZdmlzNTVNU01sRkRsZm1mTkVKNk9JTjFJb05NZTR4Qm5aZG9pYTY5aWV4UWlYMEx2Zk9hWDlMdi1FMFU5TVVMWC1mLXJnV21MbzBFYURTbUJxSlI0RjdwUGxobVY5d1h6WS16Sg?oc=5",
+    "fuente": "ESPN Argentina",
+    "fecha": "2026-11-27T02:48:00+00:00"
+   },
+   {
+    "title": "Felipe Fort sorprendió luciendo el antes y después de su transformación física: “Diez kilos subidos en siete meses” - Infobae",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQVFMQ2E5RWVReGdmaXlpZ2VYeGJxbTlyd0I0VDNYcTgxQllJamZTcU9hdE4wOFlkLTFVTGlERDZrY0FlUkh5dEJwcU5uY3JtMlRFSFFqd2VfY0pmM1NMZzhVUHQ0ZUp5U2QwOGRRTkRnN040SG5rQlFUcnQ2RHd6WFlUS3FGbFg0UnNsOTdNb2RZblpoOFpTTnZ6UDZwemxORTJHTk5Vd0Z1a1lyaUJna0tQRzZhNkl4SzVuSWttMEJBaExyd0ZDUFhwaE16N3hNcUo3MmpCRFY3OTBqX0FwaHlTbnNmTGVQM3gxdU5R0gGIAkFVX3lxTFBoT0gwRGVSSGVSSkpuX3FvU21nejRybTdGdXNGcXNzN0lnOF9LZHVJRE1RZmJfVUkzeC1pcDlOREZWSXZHRlUtdXRraGM1M2ZlbHk1LTU0d2l1MU90bUEyODZXOGwzZXpnVG1OMEhUOGdNWTF6ZEE3Q1J5c0VUUUFOYk5kVTllRG5sMWJOc0M0U0lVME9UUncwM2syVE9fV0NmVi04VkJ5Mm1oT3ZYUmJHdEpBaXhEa3d1XzhoVFc1a0g3RnFpc0J5bEZ0Z2VWSl9TT25XdmNZLUhiNDduWm5lZW8ydlBlVGV0Q0ZzTmY5c0hvaE9EdjZfdEo2bm1XRnJoMksyMHNIMA?oc=5",
+    "fuente": "Infobae",
+    "fecha": "2026-11-27T02:48:00+00:00"
+   },
+   {
+    "title": "La tremenda caravana de Estudiantes: se esperan 35 mil hinchas en Montevideo para la final de la Copa Libertadores - Olé",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWdMX0tVTzlDdVVfUjN3TXNTZ3lTZElFa1FSWFd2TlZfQUktSDFGNnVlUy1jalNPTnhWWm9LMDBYSGx6ZmgtN1VPVzNnX2daUzZGMlgxM21SMFNXMU9WVk5FRl9RQnRlMl9oS3IzYVFISkRmTDZJMXhHWHR3bUVLaU5UamhxdklDVVVGWW43OExzOXVJUVNWYlZoRjZmZWdMdERuZWdzb1FKemRhOVRBOXctaFY3T1RoRDlIb0lkN3NNajFZSVpaQzlZbVdWQQ?oc=5",
+    "fuente": "Olé",
+    "fecha": "2026-11-27T02:10:44+00:00"
+   },
+   {
+    "title": "Milei le prometió al presidente paraguayo ayuda para resolver la crisis de Ueno Bank - Página|12",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNM3VVM2c2cjlDdnotT0tsTnh3T1NhODB1REJNcjZqRThSb21qSE9ZM3JCeUVwdVVTVnVGQmNsQUMwbm1Fck5mVTdaUFFndGVZR2JySnI1UTBMZmtNLUxsSVZIblMwWm9NTUI5clVHYzB2aG81eGN6NEpJZ3haeUlGX042RHdKMC0yQmNjaHhGZmM2aUp4emVyWVlLelo2SUZ2bmxwa3B2ZzRxNU1lVFZDZXItVjdEeGZVT284RzNDd2xZdw?oc=5",
+    "fuente": "Página|12",
+    "fecha": "2026-11-27T00:47:17+00:00"
+   },
+   {
+    "title": "Pedro Sánchez sobrevive a un debate donde la izquierdista Ada Colau fue la revelación - La Nación",
     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQV0R2bkVyZVpNeW51dnZYNkc3S2tsa1lxSHdJcldhaEdGZGgwU2xyVGFtdUFKQXJJRG9rRlV0NENlQ1QyU2JvQWdWSGpuUmFYa3hvRE82OG5rcmd1QWFFWjJlemZMN213djgzUHRSeWJsV2t4TUQ5VWMxMzRIRjlHaGVJVDlsNV9yc3JNaWhJXzZndW56NkpOUHM5VFNFTU1ubUxCQTZ0ODhVdkg4TXh6RGdrbHFqU0lwYWVkdDhwdnBWN1QxejNPRV9BQXlPX2NQS3dyV3dYYTVZVk0?oc=5",
     "fuente": "La Nación",
     "fecha": "2026-11-27T00:42:00+00:00"
    },
    {
-    "title": "Enviaron mini cerebros al espacio: qué hallaron sobre el Alzheimer tras 40 días - Infobae",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQzFDazE0OGY3WGt2YURIWWZndk5UODRkYlVPbkVCTWVJQTh5OWxzMTB1d21NZnBDTWs4QjNheWs0djJxM2Flb1NfQkdUak1UTE9ndGZEd21tckdEZ2E1b2o4MjREcVMtVzc2NUJuOFlKTlF2MDhmTkt4LUZKWl8wejMzNVZtN01MOVhBcFlaOFI1cDJvYTN4ajBzdDdKZlk5bEZxckZpQkJkQTIxV0ZsU0EyZW1qNDZVdWQ0V0Zab0NkZUFTYkVn0gHiAUFVX3lxTE5idlRJcHIzU0U3VGFkbHYtcDYyanUtUW1kLUVaUlVVTXpJRC15LXVvYnE4eFZBdW1oU2x3R2xUQVF5VFkyanZaN3J6Um1Td1VibXlBdnN3QjNyTlNFNEVFckZVZWo3R1BQcTZHTFR1X3ZjZDNJSUNsQTMyOV9DOU9IQ1ZoV25EUzNpV3lOTl9jaHkta192WDBJQW9IZnFJcVd3WFJmaUVxSFNPcWhpbEtVMjFzWi05ZlRIYkZJc3pnOFlhTm9lWTh5dGk0UExNdFJhZkJLM045VXFGT09kQldjeGc?oc=5",
-    "fuente": "Infobae",
-    "fecha": "2026-11-27T00:06:00+00:00"
+    "title": "Qué dijo Facundo Arana sobre los rumores de romance con Marian Saud - TN",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOckJKYVlkenBOUjFGZVFRTllPRXlXUDV4cjRHbkFEV1AzNnk5NG5lT1IyaFBZSG5wQXo2UV9SMXFGVkRlYy03WWVxUEtybVlTTnRmZFBOeERNNVBUVGRaYUc1OEV6amlQNWhCNkhHeVJQMHV3ZUxMLXFUNEptZ2xZZUEtQVlwN2stZnhwU3VlZEFONHRzd1E2OEExNlkxR2FEdTN4c0V4UnY3TFQxZUUxX2JETmdXZFl5Q1d6NmQySlN2djFMLWZsQTQyV3lhTjdFdFMzYXdIWUQ2QXBxcFHSAfIBQVVfeXFMUGN5bTNHVmI2bUZ4NXdGTFpBd25vNl95dm0zTHJWaXBFbjhCZDRmSUkzRkloeWc2bklOLWFnTmdQc0J2UWJ4YzlXVkdFb1R3RzZnNDk5N1RZcmtIRFNlQ2JtRTJTd0JrRmtEeXU3LU9jWkcxajlYQ25xOTRZZ1gyblEyMzY1R0h5RmxNdHcySl85Y1p1VzBDeHZZZUZEZDA0ZGJTOEtzMkZ0X2t3S19iazduWDNDLUJlSnJfaWU0MHgzRGhUZFVidGRtLXpLbnc5b2VyenlTR0FfckJocVRrZmZXQ0pFUld3aGZPRExzWEJOZnc?oc=5",
+    "fuente": "TN",
+    "fecha": "2026-11-26T23:38:08+00:00"
    },
    {
-    "title": "Elecciones España 2026, EN VIVO: fuertes cruces en el último debate, las encuestas y las noticias del 29-N - La Nación",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOenBrUG53emJvTzFJc3Z1czloa24wek5xaG9IWjFGYlBUNVE5aS1mcDNlelJTcEw4ekxJZGhOdHJOM2oza1BXSHBaT1dpZjF3U2V5SHpFR0dmb0UtazV0TTZEX2VibFZNRXFNT1pPVzRSWHRXbzhKSWhoQXlRSzhsVC1hbXlLZEx5czh5cGpWSzIyZkRHVlJ0UEd4c21tZm5hRzlkbWgyczlhbjI1eWJuZDNBemlBME5NRlFZWFdITHk2eVlNRV92d0VGOA?oc=5",
-    "fuente": "La Nación",
-    "fecha": "2026-11-26T23:49:00+00:00"
+    "title": "Caputo tuvo que subir las tasas más de cuatro puntos para renovar la deuda y se complica la reactivación - La Política Online",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTUF3bTZnOVc2WVl2TldoUlJaZ3RIbEdrdUgtOXFQZ1lUVGZqYmU5Tm5xamRMSlh2M2tTMVpuNnhaUll5UmpYVTU1YlFhN1dhbjlHSVVDVU1WSHB4WHRrRDY2WUxNVjZlXzV0NkR3UEUxTTdaSWpwTGhjajNwNXVSX2MtNjJsTXBiVkgyTUU5QzlKZ9IB4wFBVV95cUxQRndLanFhUGZBQmIydHhON3Q0VURUSWJObDNzd05YS0NLbFQxNEVVMHZMMmQ5eHFCajRNV0IwTzN4dm9ULUcwUkNCMzNBdmg3cDdHNjVacDhQdEw5U3o1d2FPbW90UkZxdUViTll3TGpwNnpjWGtZaEZWOGpxbGNTUW0zXzRkQjhGc1VjbWJlYjB6VXViQUR6TkEyTGRmVVdZQ3YzOUhIU3cwOGJTMzUwUTBOS2FxNGtLcEF6RFZRclI0WGRHUUhiRGhBVjA2ZlF1VVJRWUp4QUhNNnkzejhIY0U0RQ?oc=5",
+    "fuente": "La Política Online",
+    "fecha": "2026-11-26T23:27:04+00:00"
+   },
+   {
+    "title": "Juan Pablo Valdés presentó la 36ª Fiesta Nacional del Chamamé: el anuncio de las entradas y la importancia de sostener la celebración - El Litoral | Novedades de Corrientes",
+    "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQZmh2MXBFVVFIbzdBSE9kTElzQm1URW5tNE0wd3hadkUycllkcGRMYUlMX0ZzMWdZZ2o4bFcteGtHVFlqNjdEVTluRXBNQ0VrZ1VZeG5PZjQtWUlKclJtZU95NG5yWnlnZWRYU2h5UGtybkN0VGg3eDV2SkZ6SXo1MUNnYU42RjVpZm0teHJPeU83TVRQNDg4c2U5OFhWcWtvcERURDVxQlN0cUp0ZkE4XzgtU2xPcF9IYmRCVXZkTXBOZzNZdkh2YTNHS0g5RVVTWjZHb2owZTNOSENnR3c3TEVyRWJlaHBuSmlkRURpdktseWl3QjY3RDJ2R0ZpWmUwVmFRaW9PNC1VUnhpTjhHb0JFRnpLX2VURnc?oc=5",
+    "fuente": "El Litoral | Novedades de Corrientes",
+    "fecha": "2026-11-26T22:19:00+00:00"
+   },
+   {
+    "title": "Sánchez advirtió sobre un “retroceso” si el PP y Vox ganan las elecciones en España - Página|12",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcGdxZTNDeG1mVEFQVUpTSDQ4YXQzVG1yM29HNkNsSkxDMTUyUk5iMW9Dd1gtMFNBNFdkdlFEV0E0b1FOWjRhbnJ2b1huNE4xS0pxYm5sUUM0N2lRc3NzeWktMVY4eWJFdGVGb2x0TGxSS3NFV3ZSSHEwZktOLUM1QXpyWS02UzBiU2xwZlc0YUZ0ZFIzdFZpQW5FRXdoeGVRUGhtNU40VVFkdy1BNUtJVVZQNE5weW1RdVBfLVVB?oc=5",
+    "fuente": "Página|12",
+    "fecha": "2026-11-26T22:01:00+00:00"
    },
    {
     "title": "Trump le pidió a Putin poner fin a la agresión militar contra Europa - Página|12",
     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbnFNWjZGRjNhd192c2plQndVYUdXa2ZEclRXOG1IYk15WXp4WnJUb3c5MmlHZHBxS3FXVTR6YlZpaFBldjRDOWFFcHRxc0FoOHY5YzdVNG1RaE5vSHVXaDhfM2kyWkRIUXB1R3pQTjFleGp0Zk1leUs2SXJ3M0xDeGhQR3NyUERleFgxZWVlUlJ0YXFydFZuRWc5LVdXRlZXZmk2aERiMVlmQ2la?oc=5",
     "fuente": "Página|12",
-    "fecha": "2026-11-26T23:36:41+00:00"
+    "fecha": "2026-11-26T22:01:00+00:00"
    },
    {
-    "title": "\"La segunda la voy a ganar en Uruguay\": Piovi respondió a la frase de Barboza en la previa de la final - TyC Sports",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWjA1M1RiX29vd3ZkNl9nZTA4S1EwVzZoWXE4YVBGS2RoWjFPRUQxZG9ONlRoRWV4OVp6eXpGRnhXMUh4Zm9OZkdFNnZUU0tGSzU4RG4zSmIxR2s5RGxqcmRhb25rLXB2RDFfTzlVbW1PTTlnTE1iWDdpdlZydFJKcDYxUFhBMGZXTmRXNndkcEpQUHptV3VqZ2cyR2NHMWM2SjJCUUpBTXM5ckhfM0FQNEx3dnJsekJJLVhhTWxnR0ktdmtYVEE?oc=5",
-    "fuente": "TyC Sports",
-    "fecha": "2026-11-26T23:33:37+00:00"
+    "title": "El oro argentino está en Londres y el país ya no tiene custodia física de los lingotes, según auditoría de la AGN - Perfil",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSUQtQkwxNnI5QTZPRC0xUFFRZWZPekgyNjMxMGVJdjNQUVZvbHFOU3hSZVBmZ09laEV5LWQ0MWZYX1BVQ0xYLUdiTG5hNlBoSFlRSDM1V2Fhc2tINU1xWUltandWTzZieFBiMzNvcG1qVkxxc18tSVhBdU4yQVhaRV9QTWx6SjFjaTdoWEloUkU4UTZTSHFSdHZPbWx3eEtKTmtKM2pfTU5PR1hFS3Z1SlZVWDRSVE15WnQ5YzRXN25TMGlPUHA0THh0TDJ3ZG51cjF2M2tLYjkyWENPOTRQc1RNR1czMUQ2VHJOZFJ3?oc=5",
+    "fuente": "Perfil",
+    "fecha": "2026-11-26T21:48:18+00:00"
    },
    {
-    "title": "Uno por uno, así votaron los senadores la reforma electoral - Página|12",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdGRSNTM1UmcwbVg1WHFRQ2hVRWZINS1zMTdTdnEyWXVMQW9lbEFMek1HLXpPQzFQazJYaDN2Ymx1bzNlNXhSLVhldXVmWHZRM1hoRnh3OFd1aEZtXzZjaEtwak01MkczN1RleVlpWVA3d21yX0dLU1ZSeDh4MVVIOWRyZTJucGNhbXNDVFdRYzd2dDlNSDdqemg5NV9BaHM?oc=5",
-    "fuente": "Página|12",
-    "fecha": "2026-11-26T22:18:16+00:00"
-   },
-   {
-    "title": "Euforia en Brasil: el nuevo ministro de Hacienda de Lula será un poderoso banquero y la bolsa de San Pablo subió más del 6% - Clarin.com",
-    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNakQzMmVsUTc5djJkLUN6YVc1YzBpaXlTUVFjbUFHZWZZdm1HaWJ6Z2dPYnBzOXpHYXRSRF9kU09rU1NjcjJtSW5UNzh6RmNYdTh5UHhGN3hZVUdNZEdGbi1VbHBJQV9qNGIxRTZDbWMzVjdPdXNFdVBkQXpLTERDVFVBZ1UxOXBDdjBrNlR0UWl2Y1dBdF9EeFl4OEdjZXZhclFnSkNJM1laMEhwalg5RV8yZkhoTDczUUNBN081NDRqMS10TGRhaUN3UTY2Q1F0azk2aWlEV05lWlgx?oc=5",
+    "title": "Reforma electoral: qué senadores votaron a favor y cuáles en contra del proyecto que elimina las PASO - Clarin.com",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUHN5TUpDZ3VjN0UzZmN2Y2p6c283djB2bV9ZRlUtY1ZlWjZUT0xJOUtyLXhJc29MLTJhM3prRV9BT0MxZm5FbG5CSjRXTnd5TW1LVjRLazJOUTBUdTkxNGw5bzZYTkQwQ092MlBnVTJfTXNWN1IxeTh5VHFrT3M4dGJBeURnempQLWFBWUdMd1JCN3JKM2FRQmRCY0ZUYXhfRjY0a0ZVaUQ3R3lGRWNfN0VaMA?oc=5",
     "fuente": "Clarin.com",
-    "fecha": "2026-11-26T22:03:38+00:00"
-   },
-   {
-    "title": "La CGT se movilizó por la crisis en salud y acusó al Gobierno de “robarse la plata de las obras sociales” - Infobae",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUXN0eURCX0lHVlVfTEp4bkRYM045SkxBb1EzRnExYUxqNC1YUGxGTWtUdVplSGoxb01OWGFkbU9fVVl0RWJYbDY2U1l0Q3RHeWFNdDlIYm0tcnpobnYzSTU3NERFU2VsZmRkVHExckRFbDI3UFlUVDdpRTh6d280LXl2cEkzSGtfazJ3X1ZscFpiLWhKa3VvSU51VTY1VFVkSlVVUTh1b1FsV0JuYmtFQlNLRjJaZjdxWllHbC1XQ1RQQkh3M05EaWtiU2h5cktpM1ptYnZVSVlubTZTMjctNlN30gH8AUFVX3lxTE1vVkE3c0JJRjZ0Wml3dnhJV1dUWVRDQXR2ZUVtQjVLZkthSnlCYWdYS0VmTHV0N3N4RHlPY2RZNHdmZTBBUWo1ajFmNmg2RElSUXhjNUg1c2RhVDVqUGliSmM1c2MwSzV0bkYxTGV5SjJwSmY2XzlEYjQ3eXQxb2ZwOEFHUlBPZEpHU0ZXMW5qYnJUa2RhZENrdnRMbVhrY2FTTnA0dGRCRzl5cXlUdW5iZDB2bzI1THRpUGRoNGdKMzBDZzhPYjNjUWpNVWJBNFVObGpSbnIyUm5fTjFrZ3loenI4Ujd1dmFCclJuR2k2ZmRlNWJkWTRIMlhUWg?oc=5",
-    "fuente": "Infobae",
-    "fecha": "2026-11-26T21:30:18+00:00"
+    "fecha": "2026-11-26T21:27:22+00:00"
    },
    {
     "title": "Presupuesto 2027: la oposición busca preservar recursos para universidades, Conicet y discapacidad - Página|12",
@@ -415,124 +475,64 @@
     "fecha": "2026-11-26T20:52:53+00:00"
    },
    {
-    "title": "Leonardo Sbaraglia sorprendió a los pasajeros de un avión con su imitación de Carlos Menem: “Ajústense los cinturones” - La Nación",
-    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVGNpbnhRajJGV2RXRmNuT21BVFd4cjM3YmV3a3J5MmVYdkU5X1pWdlVVQlQ1MDM2RzQxOGw2WjRCTThnazZvUzRDVHpUSG5UbjJhQ21iaEE4c0xJOXdoOW9hOGpNb2VPcXJFMzFYOUZ6ZVFhUXNJYzhsQXNOVkptcDgyTWVFUk4wUVVOTE5mUkk0Z1pQMnpuTlVjMUx2S0lzMG1wZndMNlVITlhCby1RZDZlWmZTWW0zQjU1QlZUd2lhSHRndWhXT2luQzdvRXBFS3U4allocjExVjRMUXRCRnotOGkyY2ZNZUxzVEJWZFVldw?oc=5",
-    "fuente": "La Nación",
-    "fecha": "2026-11-26T20:21:00+00:00"
-   },
-   {
-    "title": "Dólar hoy y dólar blue, EN VIVO: cotización, riesgo país y las últimas noticias este 26 de noviembre - Clarin.com",
-    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQZm13ZFNEUzRQRi1rVWVTRTRYZlpfNDk2V1YxNFpxT2xLd2VwS3BMaVZ4cW90aDBocnNyM1E4dENMZVJxNUpPRzBOM054ay1IaEs0Wm1ESzV0amtocFBWNjBJWmJzY2xDdzUtd3ZFOExqbmhMWG9sTXBjMlJkb3BzV2p6TG1WVVJJRzlTTnZuX1R6cjZZbzJoalRIcUtFOWdkTGhsM25LNWFSWGdIT2xkd3hGeWV0QW0xRFAzNGY3QjNaTFMtYkpIdHVHRUdDUQ?oc=5",
-    "fuente": "Clarin.com",
-    "fecha": "2026-11-26T20:14:24+00:00"
-   },
-   {
-    "title": "GTA 6 ya es jugable en PC a 25-30 FPS y el Jailbreak de PS5 permite desbloquear los 30 FPS - Requisitos Mínimos y Recomendados - PC Master Race Latinoamérica",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA0Wk9TdXRHZjRVTHNxd2NtTGJibmZBdHVCWURCeDF5US1QZXZRc0ItdE5VaVlQOHE2TGwtbUNydC1XSnFzWGZhX1NNTF9ObnNOWDl1SHpibUJKM0x1eE9Ua2lLNmgzRTVOQkRXaVk5M28yTG9acDRmWFVwUGJzdw?oc=5",
-    "fuente": "PC Master Race Latinoamérica",
-    "fecha": "2026-11-26T19:45:48+00:00"
-   },
-   {
-    "title": "Melody Luz mostró el baile que hizo en su fiesta de 15 en portaligas: “No me importó lo que opinara mi papá” - TN",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNM3p6R3dCNm00cUxINHkxcHZYdVQyVVNYbThpNkxWcC1IY1hqa3VrcU91R21naV9Qa2xPZFV4bjFJcnF3OXlCbExCQzFBTTI4UnRtbkhKdk4wcXc5LTczTzE1d3JzYkMzb01XcmRoVEIxMDJvTE9mVV9ScWVFbEdQRmJkT0cyajkyRzVKMXF0a3BPY2IyVE5iNk5Nd2NEa185Y1pvRDZOQ2UtcERjeDFYdGNPZEFHWVZaajFJa0tOVHBZNzRJRGpCQ0NadjNQTWt1NW5hMmJaNnY4UkNXV2NWRFVn0gH2AUFVX3lxTE9HYmRXeVpzRVAzWjdkckM0Rjd0dnlVRUhYX3UwUVlYTW9lYlJ6by1ZdnJraEtMQ1BSLWJWcDY4V0dIRmtJcV9aVEFWQk1tRHdiSVlfakJCYkJ6VGUtaXlyam5XUUxGSXVuREdrcFExeXFxTnZaR1ZVR1BaYmk0T1NvZ3otcDI3eXE5UWUyNFJmQXY4RTlOZ1lhUG5ISG9Ra3JDckZWcWhZdUF6U2hmekd2aTJvRlExSkdNZlhIbnVqeHYzQ1QyRk15U1k2NDVjTnZiX0hSSlp3Y1dUa09VVWpsbGNSdTVXZGtnVXRYUmFCeXotTDBVdw?oc=5",
-    "fuente": "TN",
-    "fecha": "2026-11-26T19:27:12+00:00"
-   },
-   {
-    "title": "Así fue el momento en que una fábrica entregaba uno por uno 110 telegramas de despido a sus empleados - Infobae",
-    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQdkoyaElCbVo0Sjk5THctQ3hqOTZ0YzVCTzdSZHdsUTc3UXBPajhlTTctSnFTUE9jSGZfMUdIQ2w5amROZ2VmNWNzSElyWnl4UTRvT2h2NW56SU9PS0NNMUlXRzBmMThEcGZtc3JBSjRKeTZvdDQ0eFpHTVFZYUpJMGxHTGVRdGFUV2dqZENNQ1pjaTF4anA1U1ktbHdPR2MxR3Q4cDVOTHdQZTZCWURJQW9BNGo2SDJWX3BBMXBIaXo5LVZ3X2tmTFJCQ1Z4WmxES2FCaTZTMGxraXdxd1dNYkxhT1AyWm40M3dhSEhRNGVBSjBs?oc=5",
-    "fuente": "Infobae",
-    "fecha": "2026-11-26T19:22:49+00:00"
-   },
-   {
-    "title": "Según el mercado, el Gobierno salió a bajar la brecha cambiaria para evitar que desaliente la oferta de dólares - La Nación",
-    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRkJCdWtfMFZNMVVwY1VJd1VFVFRwTzhUU3F0UFFBaWd1dE45TV9oaHZfN1Fia2JneEVNcTRoY3hYM1Axc1VrN2dEclBFeFVaZGRjT2RxRnNUeXlPNTIyQmM3RHhkajRxME5jX19pbzBxeVNjcGZGOUZSUjFzeW84TnN0OXJ1cUZXOGRZV01MdEcxVk1IaWNGS2lOV3hqNmY5Sms2aDdIYWlNX1lTMkRZU1VraU96N0JpajhjVjlBeDJJRW1wVm90MGtRdVc2UzN1VW9VWTFZUVhMQjA?oc=5",
-    "fuente": "La Nación",
-    "fecha": "2026-11-26T18:55:00+00:00"
-   },
-   {
-    "title": "La acusación más fuerte y delicada de Nora Colosimo a la China Suárez por Mauro Icardi: \"Tiene un...\" - A24.com",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcUxyMjQtWHdzT0ZwTW0zN3dFVFhSMkk0RlZGWjhTd3ZEQ0hFXzhzSVhOVUtwa0F0ZXg2UHlTVDVDSTZwckNfT1M3MzRzWEFSLXkxWTBrVTN2MHBuaWk4d1g2SEpKR2dCbDExb24ySk1ncWdYYmJpVjhEMVhtcUZvTjR3SXhpaDloME9DbkdtRXo3TFdPVU9lTzY4aGszTExUc2FVWjRlaDVTcTBDdF9xdEt3SUlFODdaY0U5bGJMejdfcVpWQ2fSAcsBQVVfeXFMUFhRM0JheXBmMmJFMXowaTlzS3NSQ1duTDFYSGw1Zm0wSU9BczZOQlJhQm96Z0NNSjBSYjVIUUFld0p2WTA0YTFlYUhKTXdNcW1EVGVTY1B4MVVkZ09RQVJRZVpiWEhKMDZ6X1JRcEZYRUlwMXdCY0JNU3N6c1VkOTdTR1lTUGpfUHBqM3lFcFFmTWZPU1ZBYzlBUjY5d3cyekdudnlWOWtYLUN5TUp6T2Q5Nzk3RHRObGJJUERvOGFlSlJ0cVAtdGhUV2M?oc=5",
-    "fuente": "A24.com",
-    "fecha": "2026-11-26T18:52:47+00:00"
-   },
-   {
-    "title": "Las bombas de Pipo Gorosito contra San Lorenzo: \"Mala onda\", \"cosas extrañas\" y \"son todos kioscos\" - Olé",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNX2pIX0VsUzFHc01RWGoyV2NWQzFmS0J2MUlTR1UwREhyYWhRWEVGMDFrRm1BWFZ3ZExydF9iVUdRUTBETE1fWmkxSzF0Y3JDSHMtTGxycUV0Q3RMYzdKNndTNFMxbjBNcVlmbWpwV2lES1dCTDFnMml3Rml4WUV3SXQ0blpZQ1JXTDlVTVk1M25hRFA5SElSTEgtYlJkeDRhWGFxQ3FHSUl5b3JseUtZMERyY3BVTVdfcWpXdlNxUllMdE9xaXVhSk1ZcERhVjR1YzFrU1M2Y1I1ZkNGWFZr0gHkAUFVX3lxTE5MMkJpYm9lM3Y0cEc5N3RNSEQ3QmxwdG80a2pZR01FWVFweF9mdi0zZEJRYmJBVmxzU0pKVGl0Vk5qOUtkYVpXcGRHX3lEZXlSZWh4MTk5dUNnUzZWTnhqNUNza2tTdzBlVlJ0b254aXBreWlSMGFUN3Q4dFlWLWtqX2lKSXVsQU5aMkptZGJyaVZrMVRYcWhCbzk5a0dRVjNHdVVfbGJtZFRydVd0cEVPeGhkX2l1dGFCYjdXSndvNnpOX05DUllRams3ZUJaZTBwb3FWSXpPTXRBaU9heHRHLU5Qeg?oc=5",
-    "fuente": "Olé",
-    "fecha": "2026-11-26T17:47:45+00:00"
-   },
-   {
-    "title": "Diputados convirtió en ley la reforma del Banco Central y el Gobierno busca avanzar con el presupuesto 2027 - La Nación",
-    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNRTF0cGVidkVoUzF3eU9ra1lFTGhMdjlfeTN2US1CaU52NEJtWTN0UWJhZXVyYmJSdjFVRzFVcEJ5YnNSQkVUOGxwNHB1VWV5bVVHVFY0bWllVHdZU2lILVAwM0VUcFA1VEVuc1Z4cE56OGEzaF9VRjJlTldTTHBQUmw0ejlid19LRG81a08ySm5oZUxTbHBqR1hrNU5UUTUydW1sN0MzNm5Pc2xqNHJBRG9vekwyS1pVWkpjODJlbmctQ1V2cjVOcUVadVVLU2VIYzRINkZLc3E3U0RBcDB2UA?oc=5",
-    "fuente": "La Nación",
-    "fecha": "2026-11-26T17:45:00+00:00"
-   },
-   {
-    "title": "Pablo Quirno: \"Somos los 'nuevitos' y estamos tratando de seguir la senda que Paraguay inició hace años\" - Clarin.com",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcHVHb2E2b1FrczhXbDFWV05tVlRPSXVhN1VMZHhRSm9DOU5MVGd2NHRrSjB6dGZQdnFRaU1iYzRjbHJzMERrNkU4T0JEZWlfbDlvMGNiVFFWallhb0p0UDZONk4xcl9RVEJZRHRwVEprMTRjRHRvZXJnWVRVdFEtMV8zRjlWb2EtQzVzODVYdzd0SldIUDJWYzkzOTFZVlkwM3FhZU5EZ2FGaE9KMWlGWFhIdjJ0Sm5zdW1V?oc=5",
-    "fuente": "Clarin.com",
-    "fecha": "2026-11-26T17:21:37+00:00"
-   },
-   {
-    "title": "La palabra de Marian Saud, la diseñadora vinculada a Facundo Arana: “Jamás pensé que dos perritos jugando harían tanto lío” - Infobae",
-    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOeEFuTGVGN1NmU1AtRXBONmhUMWs4bmN0cVo3N3RocnFiNUpFUG91a1NQelRfYUFoU1BiN1Fpb1JSYUlMa291dk5RYVRSZkV2SXdTWlFDOXBRd0xXZUpPa3FZaC1JVFIwNG9hWC14UzlQQlBOS0ZFQWdTLWt0T2RQSFItQUVJUHpoelpGdzdkdk9FdzlGNVZLMEljeUpIMWh3ZzlJdHdaREgzN3JzU0h3T0hNT3NJN0htdXdKNFBZVEdqemhpWk5NeS10dEdKbVZTd3JmTmlrUnFNU09LOWFWanQ0T1k0d1NyT2VoNHlmM09HOEQ3cG5B0gGSAkFVX3lxTE1YVUlyRnlZaUgyUF9faDI2OGZWR1NKdmlRVWpMdGFla2pJUU1nS1pxeEZmVzdVQm1TM3o2bFJiYWdVMXRZaHJPOTN1VE84ZDEtYXNJM0pGa1lsX0V5Z3pFamgtd19pNEdxQmJzTWNYNWZzRk5sSHpCRjNTWU0yQXZhd2lXZjFVR1RSX2JFcG1US3Q2Q0tlS0VsUS1DNkh2OHBfM1ZPclRCeHFWTUpuRkJ4ckp3Z3V3NkJ6ci1TZC12OC1MMWJTb0JldHFHMUtZbjJQMDBETVJVZzN3U3l5RVFiXzdKSHZCWXpjMDJaei1XU1I3M3JkbVctSXRPV0h4c2FleTVRS1N6SmhGWjJPNEpXN3c?oc=5",
-    "fuente": "Infobae",
-    "fecha": "2026-11-26T17:19:00+00:00"
-   },
-   {
-    "title": "Celulares buenos y baratos: ocho modelos que se destacan por su relación precio-calidad - Elonce.com",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdWNRTzU5SmRxd2wzLUp2MHYxajd0UUxBMDV5MUN6UEJ5SVdpRXZ5WWVfenpqQ0d0VmFWLVdQTmNtNldONGhtYjhzc2VuLTVCbWdIbW5Zd3dqQU1DcHRISjFGbXVObGVWa3dwV1BnTEs0aFlCckp3cUpwS2R0WDEwSEFQNWowX0JZNWRPNkRYVDFWeGxET0t4T29YNWdfazU0Z1VsaHozT2YySlducWhyN0VacU1idzlYWkYxcVl0NWR2b3hC0gG-AUFVX3lxTE5HanFsWjhTT3k2M09MWHRia2lUM0lCNnlxWkR3WUVVaXI5eWUxTl9PNGJCekVDdzlTeWVUbE9fZmktMjNZYzExYmZEQS1tN2lWUTQ0QklCTHdPYXViWEFpM0hlSXRUQnRUS1pzTlN1UVhPS2puNXJCOXdOejBBQWU0Tm02SEFBaVhWR2g2WHJ0NDUybGRWYVhqWU9QVHF6V1lxa0FsN3FvSDFZWHQtMWp6UVFrYjFwZTVHTS13TGc?oc=5",
-    "fuente": "Elonce.com",
-    "fecha": "2026-11-26T17:00:20+00:00"
-   },
-   {
-    "title": "Los exabruptos de Pichetto contra Quirno: lo tildó de “mediocre” y “el peor canciller de la Argentina” - La Nación",
-    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOVhTa2w3a3JDVG9YTXhSRVNYSXJNQ1R4ejdCa2psd2dlSEFNZ25fa2I1cGFlZ1FjR0NkVFNyc0wyVThxdDhhMTk3RGtGa0FpT0lhM1REU0gxTjFCaEJNdkxONkZFYmtUUGYta1JTSDNiMk1CRFB3ZWJVYXBhaGNEQnJEZHVsUHF6OERWMFYxam1oclNFdGl4czRabEQ2R2F6OUtnN3dCcjdyc0NwUDR5ZlBaLU9hRXZHa2ZEWmNNNEpZZE1aRU56UXRKdFFuY3pmZXRROGk2YmVvdGJpcmR4SQ?oc=5",
-    "fuente": "La Nación",
-    "fecha": "2026-11-26T16:56:00+00:00"
-   },
-   {
-    "title": "Reino Unido envió cartas a 100.000 reservistas ante el temor de una posible guerra - Diario El Sol Mendoza",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQTVWMG5seW5vVl9YeXNaMEw4RWdtenVMQ1ZXOFl1WnBHdVlmajZRNkNuSnU0bW5pdDFxMkJ3WlB0U0pwOWlaXzBDcmNldUVhZXZrTFdlWjhDYkROZUV0LVRQLVhDekxWWGVrY0RjcE5nVkhJbjZLeUxDbEd5cTZZYnJYUGxaSzJSYlpGOGVnSFdqT0FuSzl2OEp5bnZucF9kNVpFV3hibEctLTh2ajR6RUFIYjNIUQ?oc=5",
-    "fuente": "Diario El Sol Mendoza",
-    "fecha": "2026-11-26T16:52:12+00:00"
-   },
-   {
-    "title": "\"Ahora las cosas son diferentes\": Bullrich pide al bloque de LLA votar ludopatía, pero hay resistencias - Clarin.com",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPb3ZJMjQ0cGVNQ2RmcnNVSzBFUWZvX0RPdVhvZUxjbGRBWUtTUVhJYUJGMEN6dEwzTW5MN2JXSFNJeFZtRDFJQ1AxUTNmbng4VjY0QTF5Yy1uc0Z6M3dacFRvcEg2YUhIRThpOUl3VDRlendsZm9aOGMtS2o0Wm10Q1lTUG1XajhsZGNUU1BaQmtWcHZLU2hLQ0EzWF8tbWNrb01uTnl0MHlnWmltYjVlMnN2cWdJdnl1Z0lzemVna0JHMjlU?oc=5",
-    "fuente": "Clarin.com",
-    "fecha": "2026-11-26T16:42:37+00:00"
-   },
-   {
-    "title": "La salvaje pelea durante más de un minuto entre dos jugadores de hockey sobre hielo que da la vuelta al mundo: “Una de las mejores que he visto” - Infobae",
-    "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQc1c3Q21nSXIyYjJrRjdxSlNVcEl6OUVFdEdJZFdPSHVpc21YUHpHRzNVRTZFdWxxS3RYWHRNT0FxSFhVemtlRzJKYmI0bHNfeGJDU2dPTEhKNmR6Z2R1WnQ4SDJrY002NXV3R3Q3bFNVQ1RWZWFpVU16MHpjdG5US2x0RmJjWXM3bTJ5TWtTVDhGSjVBMFRSNHpVODZWSjZUOXBNRVRVR0JQUkRFa1pGNXhnOGh3UFZGRE9mRk1VRDdTVFdoZ1E3eTk1ZG1mWVowVXF5QVlYSk56SXdyTE12Ym5xczkyOUNjTkdRVUEzcDE2WGgycFA0V3hKY0RBbzV2WDRKdnlXdVR6TnM3U3lxdnpGckPSAa8CQVVfeXFMTWFUU195MU01azBQNHJsWXJYZ0dQcllZZUh3WVdhN0JHUVFwUkZnVDJheUotLWNhSmJvNm8wakp0czAzSlJIQk5ZLVVELUE4WUp4Y0J3VXlXZDJ2ZjdCYjZXbjZROHQzbEZOYURROE04bDUzOWJ5Vm1Dc2VDSXNmUV9oQ210S3ZEU3ZsQnUyTnBzb0x4Wi1oZjlna1ZQUFIxamVoek1aUW9LU0oydFBLZVlwcGd0OVpEVS0wd2NyVy1CT3AyeEJBa2FUZEV1SnR3MTlWWXhZb1p1dnlzWlA1alpkVkEzTEY0UFE1QXQtNUQ3dXRnVjJXRTF2aE11d3NYU2s4dzFpYmtXRkswNVJEZkYzdjFudVFHUTBOazJKX1Y3OWJIbTZKckVKZzAtZ0sw?oc=5",
-    "fuente": "Infobae",
-    "fecha": "2026-11-26T13:11:00+00:00"
-   },
-   {
-    "title": "Torneo Clausura 2026: fixture y resultados de cuartos de final - ESPN Argentina",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQnNTMjRHWVVZdFZNTjBOcmMwcEdkTEk5RTRxdGJLZ0ZoMUpaNHlwUnlqUncwbEE1dXNHaXM5Y2JWamlJdzg4enU3VFhZOS04MWNtWkpQOTNUa0huenUtTTFCZEJuWTZHb1FkN0dtakRqRzAyblEwZEoxcFpFeXZWbDVCMHhnaXdWUlRCbHRBMVJfNlU0RUNibE1tVGx2TmZHSTdjUA?oc=5",
+    "title": "Ocho jugadores de Boca en el 11 ideal del año de la CONMEBOL Sudamericana - ESPN Argentina",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdGhzTEswWGVCWUs1TGRkVURRYTNSN01CdThkQV9PQTNTUmh1d3M3QkpubEtPMUlXMXUwSlItcGtmcXFLeDd3NmtVS2M2M2FHVGdaMTJXUFk4TUpxcnZIdDFldTBOdDdsUTlMeGo1NEpKWENyUUFvUmNZb09ndmh1RGZTYUJSVzZQN3RtenBhVWZjaFFwX1hKaHRxWUF6SHNqTHZMc3NydVZ2SC1oWFFBMjFoV2xIVU1pd2xrT2d2T1U?oc=5",
     "fuente": "ESPN Argentina",
-    "fecha": "2026-11-26T11:05:00+00:00"
+    "fecha": "2026-11-26T20:27:00+00:00"
    },
    {
-    "title": "Acidez recurrente, hipo y pérdida de peso: un oncólogo explicó qué cambios pueden advertir el cáncer de esófago - Infobae",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMV9mYnVMS295d01wTzBqaktxWnEwbGQ2NnZxblhJQmlCX215Y2xvRU9CUHMwSURid0NUSXd5d3BqeXg4Vk92M3N3NFhOYXVRXzJjemRuakE4NDFpa2plM01QREVDTzNFRlNjam55aFVadFlTUTRXaDdic05RaS1md0dXNXNHNjVibkN0RWo5MXVJV2pDZ3VFWDBlMGZlQ0pfWGJNMjFHcktFVVNkSzJEaGFjQTJZb3YyRE11Q3E0RHlPdTRDY3BaSHJZQlBEWUNjSnZEdkEwSTlvVFh1TXRELUxIb0pNQdIBgAJBVV95cUxQVmlCSngyVVZRbGdHWFFFSzgxcjVDenRrdnp1RWYtMjVVWFBzRS1GVzQwMzhKNk9senZNenI1ZVNRSXpIUXVta0lwQU9BNTVwY2RQV09aZXltdUg3SlJKYk1wakVZMFljcTQ3OUtTbVR5RnBCS040SkRJTnVaOHIwUG9FMmZ2U3lpbkVySXNNQlh6d1V6UXlyR19YSVZkSV9DWXJXbXllQzNwcmN3Z04xbFRjT3J2cW1uQXAteEI0VG5WM0xra1ZleHFJbEJJeHZtbGlIR2d6WFJ4WjI2XzdleE5naTBNUVJja2k5MU1KZWwyMnMyM3I0eFYzaWsxWTdp?oc=5",
+    "title": "Alberto Weretilneck confirmó fondos millonarios para las rutas 22 y 151: dónde se harán las obras - LM Cipolletti",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVTNHV1ZvNUMxUlF3M3M3MlZ2Sm5acHBLQjYtN2oxOGVPWXc2SGkteFVfcDlVMUVIaGNVSmpSaXJ6RHZvaF9HbVhiWmNhengxRzBZbTFHcENCSnpZZExpWm9VTE0xa0pzMlVfNWhFLTg3VlZ6dXVia01UQUJBdWZtVjZHQ0NKTkRrVmlZNmNWZGpMLTFVWkh6Wl9HUi0yVkVBVzFuZm82TjFlbWUxdnlseDY1NTVFQXpHdDF1Y0NPQ3p6SU5JYUNocnE3a2trMXJod1dBNnpR0gHbAUFVX3lxTE55Q2doVW0xT2lMcF9GUGFpVUNYOWR4T1RpU0ZkbHhtcTIxRTlmZkVoQjNUSFBENkg0RC1pWUZsRklvdngtM2ZIRmtQNmNXUkliRVBTeXh4b1RRRWNVREJERkVSWjNZZ21UNmtjeFlZQ2RLMlk3X2NXbkl2RmhNQ0loMGhnQVNHd2E0VFl2My1fcGZVTHJmcHY1T2NjdGxnY2U4cjRFUjg5bUZNSTI2OC1GS3dycWxhNjJXVzhlZTR5MDFHcE1udzc3cC1OVVMzWEtsaHh5SnM5TklFcw?oc=5",
+    "fuente": "LM Cipolletti",
+    "fecha": "2026-11-26T20:04:00+00:00"
+   },
+   {
+    "title": "Cerraron más de 50.000 kioscos en los últimos tres años y el sector perdió casi la mitad de sus locales - Infobae",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdjktZ0JuSThCT3lWT1ZTNjVXNzlfMXMtV1ZoSGxlcU9jb1RIRGx2YndLUGRQcWx0SEtpMUdqQVNjTHE5YTQ4UnBPVUZyeGlVVWNfTHQwYVJHcVpIcTE1LVpMV3VoblBSZzJmRnlvTGJtT2doRXZ2NjZRVEx3QjFYRVA2VWFNSUtFdDNfZ2txUXhSSjVManZkN05sTm90Q1F0SmtsRWlVeVlMMzRvaTRhZkNGV2xDT2ZfRUZXVTdKRldraWhsckRPQkNvUEN2ckVsTWNWbjBtQXQwRWx0RktMMtIB-wFBVV95cUxNbjYwdHowRGRlcURHZ3JCNEpPOTdaYnNFSFNzUWxpUHpoZm9wYzJXYnY0YklsMV91TkVSLWJUcnhlQ1NGYXJkQ3lYOTNSb0VFX2t3LXY1WDhIUkZQSTVNaU1DN3k0MnlIM3ZEck1FRGJqb0lmUjhUei1PM0ZYZXJtODZQUV9HQWVZQ0Izd1hoTFJRSENITXdBcl9VbmlWcHFaajBabVVxTkJWdUxvLTB1dDZQTmZhS2dHWUpNXzdiZW41RFZVUVJwZGYzOUs5dWE3cDMxdzV5NmJnU2Z3ZGxCb0hjTXEtX2UtNEw3SHRXNXEyUWd1a21hT1JLWQ?oc=5",
     "fuente": "Infobae",
-    "fecha": "2026-11-26T10:42:00+00:00"
+    "fecha": "2026-11-26T19:03:00+00:00"
    },
    {
-    "title": "Cómo programar un mensaje de WhatsApp: el paso a paso para realizarlo por celular y web - La Nación",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUmgxX1JGOGc3NEVMTUhpVEJnb0tKQ1FyeVJ0QW5BRmRGeEEyLWxUbWR2QVhsQ2VzREZIWXphRGhDamQ3ZVlNWU9VVURaZTVvVjhJMHZ1Uk5BTWtDWlN4WElRdC1DbVRYRVVnaXhZYlpzWHB6QlNnZnRKMzAzV3gzRnBGYjZGUTNqTEFDQ0hTZUhSQ08ycUtObG1KaTc2SVhLM0llNnBybDJDeThpZEVmc3llTGRiVEVzU1R3Nzd1UTlFWEd6cy1ld0xFM09Md0x0SFQwNQ?oc=5",
-    "fuente": "La Nación",
-    "fecha": "2026-11-26T10:35:00+00:00"
+    "title": "WhatsApp lanzó una de sus funciones más esperadas: cómo programar el envío de mensajes - Clarin.com",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd3JaTGhEOWp2OVk0eEFLVGhtbllYYjZ5OXkzcm1zRFlPR1RmNVY2bWtpQ1ZxQzJ5Smdtb0JkaGE2YTJKNkFUeTdBUTlWYUVUREFNZ3VKRnVuYkRXOWlzWk0yTlZUR3lBdW1rdVNxaFc3bFhBdGt1Qi1XZ3ZmWVNXRG40NEt1MFdJZVZVSXpZYWRPYldPM0d4WEl0bTA0NGxvc2tUZ1ZuNGh3cC03aDhictIBtgFBVV95cUxPdmtpUHJoWlN2aE5YU1pvUHMxVHBYSWdLdW4xazlrN3RkR0FLbWJfdjRYUDhQX2RNOWJsSFJVSWRIWXdXVTRKX3pMVi01NTZEZm4wbllDbzRDdXpDSEg3a0lVYmlKNGVZWV9ScVVYd1g2cWM2T19YaGFvY1hlN2hvNTBNMHlTdkZlMDVLelpHbFZVTFFlakJ2MG4weWt6UVhYYlNRQU54U3lXRElZUUYzQ2NXN01FUQ?oc=5",
+    "fuente": "Clarin.com",
+    "fecha": "2026-11-26T17:31:13+00:00"
    },
    {
-    "title": "Plazos fijos: dónde conviene poner la plata hoy, banco por banco - Dolarhoy.com",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVHFhWGhqRlctZ1Zwa3NnVTJObWtZcXJEbGpnSHBLZFdPVFd5VWcxalhfLTh1TkpaNFRGQW9vanQwSUVnMU5YUmFHNFAxdGVkZWdBTHpIdmFuTTA3bldJZXExVEpQbEFSeTdHc1V6WF8zRmprS2xnNHFmZHI1aGstY1hyM0pqNVB5SDJ0TUVHc3ViNlczMnl6dmx3TXh0NEJ1N0dzazN4MnlneTBmMUpZc01DU09TTWZoU2xyWmdGU2E?oc=5",
-    "fuente": "Dolarhoy.com",
-    "fecha": "2026-11-26T00:14:14+00:00"
+    "title": "Colapinto avisa que Qatar será muy diferente a Las Vegas y dejará ver las \"debilidades\" de Alpine - Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNlQyT3ZrbDBDckJmS1VjWWFSZE05bVJjajRDN2tESDNQN2p6cG1fRkxOaVhPNmlybERTSVJsQ1BXQjNIRXhyVzdDUlR4TG9OcFZLaExZOWdqbnZuVHBnOXlXdWlYcTlrV1hPMWFlamtuSFVhbldOTkFtRjZhSXVvY19LR1dvVS1qbDRDUUpvejRwYVpM?oc=5",
+    "fuente": "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+    "fecha": "2026-11-26T17:20:44+00:00"
+   },
+   {
+    "title": "Un estudio reveló qué orden de ejercicios puede ayudar a bajar la glucosa y reducir sus variaciones en la diabetes tipo 2 - Infobae",
+    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPYXJLeUZKSmNFZmZwYWRDY1ZuMXhSY0RYNFlvQ3RFWGkwX0dNT3c4b1JvbVp0VmhFU3hnQ1RNcEVSU1M5Q2FpRFBBdEdMaVZTUmdPUkhZNnlpbnlVXzE3LWpQN0R3Qm52N0JmTFB1SGwwTnloYjZqUTZIRHBvRHhxaVVsVDRpS0N2M2ZkMDJ5UTR4ZVZHVFJtX0hvcjUzZ2J3TGJCbHphM3RDNFo5enNfTG1ldGhTNHJINXhyUEs2aGZQRkVjR0w1X0N2REdfb0VoQUxWY2g4STI3ZUhrbXgzVHRmX3V5RzJRczR6aVJTVXg3SGxzalJ6Vk55dk9QTVHSAZoCQVVfeXFMT3JXcnhnRll4X29XQnBUdnAzem9pRnBpNzZ3NDVGQTg1OFd2MjlZWDJUbHFJSGJWc29aQVdlYzBsUU8wbHhTaFo5YW1LbW15a0ZYcmhVUVBsV2RPdVZpekQ5R09sNFU5Mmd4MFhEUmNEcmtXVExCYW9xNDdMR0h4ZnZocFRGR1V0N3BGeHIyeXJDT194QUtNTS1GRXFLWWNfQXUtSjloXzhjUFNUUWR3M0ZoVmRfZ1p3aDRQd19NQ2ZoQ1EtcW92Z2R2N1BxTjRkQlpQc2gtQ2QzbW9FUEVScjl0cm1TTkQ0RV93YWc1QjZWYTdfcHVyRVVRYlRSOTZiTDdUTmZHTUFJZWxJTjU5dmRjOFhOd0pQeHh3?oc=5",
+    "fuente": "Infobae",
+    "fecha": "2026-11-26T16:15:16+00:00"
+   },
+   {
+    "title": "Elecciones generales en España: quiénes son los principales candidatos - Clarin.com",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQT2N6SWluYVFnaFJXZGRSX2U5dzU4b2xTSnA3WWJHT3RJTWtCNm9DVEpZUWJ0czA1OXd6Q25RMkNJbVFKWXRFaFhYb1FPbkdyNHlndVQwUURsOHNyalgzMjYzTFpIdlVobENhemZYZHMyd1hSN1lVR01kSXhWdWc1czZNMU5GcncxV3htU3l0UlZZNnNNdVJuQW9HYWx6dw?oc=5",
+    "fuente": "Clarin.com",
+    "fecha": "2026-11-26T15:21:06+00:00"
+   },
+   {
+    "title": "13 ambulancias nuevas para reforzar el sistema de emergencias sanitarias del área metropolitana - El Litoral",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOX04wcEt3S1pfWjA4Qm1IN1BOQ0tBSEJDVFFCb2V3XzFJV3J4eHpqV3E2M2ZjS2xTU1BCVUt1VGQtdXdhS1o3Sm9FTEd6UkRFOEZCTUcxNUlTM3gxay1ZOWdIVm5FaXJBY1F2eG1tUzN5XzBwbE5mRzM0TVdpbWtLLXdjcFZfVVB4Q0xkNXFsMGtrQ1pidXRUX0U4NmxkRlhTTnQ3RFF6NWpzUmJwWVp1N0pEalo5YzRtVEY3aQ?oc=5",
+    "fuente": "El Litoral",
+    "fecha": "2026-11-26T15:16:35+00:00"
+   },
+   {
+    "title": "Bajó el dólar: el mercado cree que el Gobierno salió a intervenir y Caputo le da más \"poder de fuego\" al BCRA para controlarlo - Clarin.com",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQcm5pYlpjV3ltNmxyVmhBN0dVcUdaUVp2dWp6RWdiZGhsMU9Zd0JvcGlzcF91LW9fXzRMOHRmeHp4dzBYc0JEbGZlRkppaTJkRlMzc2ZCU1c3WG0zYjN5WDYxZ2haazgyQzhHNG03M3RFQ3Y0Z1JNaGhuZkNQN0liaVlDR3U2WHd5Vjh1UFZoeE5xcXg0RHlBcjZjNlRnUldPcmZmc2hCa2RKcmhmZ0JQUnBWRDg1VWJJeXlUaFpfOHRNOUhjeUM0cnB2Z2hQOTRHMUdUVg?oc=5",
+    "fuente": "Clarin.com",
+    "fecha": "2026-11-26T14:27:27+00:00"
+   },
+   {
+    "title": "Detectaron tres casos de la variante de Covid-19 PJ.2.1 - La Arena",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQ0FhM2c4dHJSYnE2V2VRZFh5Y2xDMk9WNmpUODZjVlVyTWNmNVZ1RllURHpFMzI0WDdfdmpYY1VIZmM1b2g5ZmROdmpZZm9zVU1zdnM4dW1kQ0RJYU5XRlNTVmtCQmNBNTB2RDlNWHVTRE9YNzRBWndsZmZEYU8tQjZqOXcyNWdIQllHcnpmWFZQNGdiLW82c0NiSkJJNWNLS1hjbVNnZGs?oc=5",
+    "fuente": "La Arena",
+    "fecha": "2026-11-26T11:46:46+00:00"
    }
   ]
  }
